@@ -5,7 +5,7 @@ import anime from 'animejs';
 
 class Anime extends React.Component {
   constructor (props) {
-    super(props)
+    super(props);
   }
 
   componentDidMount () {

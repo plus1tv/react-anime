@@ -2,10 +2,10 @@
   "name": "react-anime",
   "version": "0.1.0",
   "description": "Bringing anime.js to the React Community!",
-  "main": "dist/Anime.min.js",
+  "main": "dist/anime.min.js",
   "scripts": {
-    "build:develop": "cross-env NODE_ENV=development webpack src/Anime.js dist/Anime.js",
-    "build:production": "cross-env NODE_ENV=production webpack src/Anime.js dist/Anime.min.js",
+    "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
+    "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
     "build:publish": "npm run build:develop && npm run build:production",
     "test": "jest --coverage",
     "coverage": "jest && codecov",
@@ -24,6 +24,13 @@
     "anime"
   ],
   "author": "Alain Galvan",
+  "contributors": [
+    {
+      "name": "Kennet Postigo",
+      "email": "kennetfpostigo@gmail.com",
+      "url": "http://stelatech.com/"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alaingalvan/react-anime/issues"
