@@ -1,0 +1,23 @@
+{
+  "name": "react-anime",
+  "version": "0.1.0",
+  "description": "Bringing anime.js to the React Community!",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alaingalvan/react-anime.git"
+  },
+  "keywords": [
+    "animations",
+    "anime"
+  ],
+  "author": "Alain Galvan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alaingalvan/react-anime/issues"
+  },
+  "homepage": "https://github.com/alaingalvan/react-anime#readme"
+}
