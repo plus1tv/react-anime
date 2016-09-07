@@ -1,6 +1,6 @@
 # [react-anime](https://alain.xyz/react-anime)
 
-[![Npm Package][npm-img]][npm-url]
+<!---[![Npm Package][npm-img]][npm-url]-->
 [![Travis CI][travis-img]][travis-url]
 ![Release][release-img]
 [![License][license-img]][license-url]
