@@ -15,7 +15,7 @@ script:
   - npm run test
   - npm run build:publish
 after_success:
-
+  - npm run coverage
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
