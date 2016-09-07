@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/alaingalvan/react-anime/issues"
   },
-  "homepage": "https://github.com/alaingalvan/react-anime#readme"
+  "homepage": "https://github.com/alaingalvan/react-anime#readme",
+  "devDependencies": {
+    "jest": "^15.1.1"
+  },
+  "peerDependencies": {
+    "animejs": "^1.1.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
 }

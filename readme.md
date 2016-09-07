@@ -4,6 +4,24 @@
 
 [![Build Status][travis-img]][travis-url] ![Release][release-img] [![Dependency Status][david-img]][david-url] [![devDependency Status][david-dev-img]][david-dev-url]
 
+A port of anime.js to React.
+
+Your `target` in anime is
+
+
+
+```jsx
+import React from 'react';
+import {Anime} from 'react-anime';
+
+let root = (props, state) => (
+    <Anime easing="linear" loop={true} duration={5000} delay={(el, index) => index * 80} start={tranlateX: 0} end={{tranlateX: 10}}>
+      <img src="harambe.png" />
+      <img src="trump.png" />
+      <img src="kanye.png" />
+    </Anime>
+);
+```
 
 [website-img]: docs/brand/cover.png
 [website-url]: https://alain.xyz/libraries/react-anime
