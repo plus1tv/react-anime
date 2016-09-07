@@ -18,7 +18,7 @@ npm install --save react-anime
 ## Usage
 ```js
 import React from 'react';
-import {Anime} from 'react-anime';
+import Anime from 'react-anime';
 
 let root = (props, state) => (
     <Anime easing="linear"
