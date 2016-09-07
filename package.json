@@ -2,7 +2,7 @@
   "name": "react-anime",
   "version": "0.1.0",
   "description": "Bringing anime.js to the React Community!",
-  "main": "lib/main.js",
+  "main": "dist/Anime.min.js",
   "scripts": {
     "build:develop": "cross-env NODE_ENV=development webpack src/Anime.js dist/Anime.js",
     "build:production": "cross-env NODE_ENV=production webpack src/Anime.js dist/Anime.min.js",
