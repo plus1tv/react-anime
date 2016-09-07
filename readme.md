@@ -2,7 +2,7 @@
 
 # 🎆 [react-anime](https://alain.xyz/react-anime)
 
-[![Travis](https://img.shields.io/travis/alaingalvan/react-animae.svg?style=flat-square)]()
+[![Travis](https://img.shields.io/travis/alaingalvan/react-anime.svg?style=flat-square)]()
 ![Release][release-img]
 [![Codecov](https://img.shields.io/codecov/c/github/alaingalvan/react-anime.svg?style=flat-square)]()
 [![Dependency Status][david-img]][david-url]
