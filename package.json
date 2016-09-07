@@ -4,7 +4,11 @@
   "description": "Bringing anime.js to the React Community!",
   "main": "lib/main.js",
   "scripts": {
-    "test": "ava"
+    "build:develop": "cross-env NODE_ENV=development webpack src/Anime.js dist/Anime.js",
+    "build:production": "cross-env NODE_ENV=production webpack src/Anime.js dist/Anime.min.js",
+    "build:publish": "npm run build:develop && npm run build:production",
+    "test": "jest --coverage",
+    "test:watch": "jest --converage --watch"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,25 @@
   },
   "homepage": "https://github.com/alaingalvan/react-anime#readme",
   "devDependencies": {
-    "jest": "^15.1.1"
+    "babel-cli": "6.11.4",
+    "babel-core": "6.13.2",
+    "babel-jest": "15.0.0",
+    "babel-loader": "6.2.4",
+    "babel-plugin-syntax-jsx": "6.13.0",
+    "babel-plugin-transform-class-properties": "6.11.5",
+    "babel-plugin-transform-flow-strip-types": "6.8.0",
+    "babel-polyfill": "6.13.0",
+    "babel-preset-es2015": "6.13.2",
+    "babel-preset-react": "6.11.1",
+    "coveralls": "2.11.12",
+    "cross-env": "2.0.0",
+    "eslint": "3.3.1",
+    "eslint-plugin-babel": "3.3.0",
+    "eslint-plugin-react": "6.2.0",
+    "flow-bin": "0.30.0",
+    "jest": "^15.1.1",
+    "react-test-renderer": "15.3.1",
+    "webpack": "1.13.1"
   },
   "peerDependencies": {
     "animejs": "^1.1.1",

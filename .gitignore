@@ -1,6 +1,11 @@
 # Dependency directory
 node_modules
 jspm_packages
+dist
+.DS_Store
+.nyc_output
+coverage
+
 
 # Editors
 .vscode

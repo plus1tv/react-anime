@@ -1,0 +1,29 @@
+{
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "modules": true,
+        "jsx": true
+      }
+  },
+  rules": {
+    "strict": [2, "never"],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2
+  },
+  "plugins": [
+    "react",
+    "babel"
+  ]
+}
