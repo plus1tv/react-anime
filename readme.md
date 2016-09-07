@@ -11,7 +11,12 @@ import React from 'react';
 import {Anime} from 'react-anime';
 
 let root = (props, state) => (
-    <Anime easing="linear" loop={true} duration={5000} delay={(el, index) => index * 80} start={{tranlateX: 0}} end={{tranlateX: 10}}>
+    <Anime easing="linear" 
+           loop={true} 
+           duration={5000} 
+           delay={(el, index) => index * 80} 
+           start={{tranlateX: 0}} 
+           end={{tranlateX: 10}}>
       <img src="harambe.png" />
       <img src="trump.png" />
       <img src="kanye.png" />
