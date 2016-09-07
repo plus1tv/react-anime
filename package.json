@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/alaingalvan/react-anime#readme",
   "devDependencies": {
+    "animejs": "1.1.1",
     "babel-cli": "6.11.4",
     "babel-core": "6.13.2",
     "babel-jest": "15.0.0",
