@@ -4,8 +4,8 @@ import React from 'react';
 import anime from 'animejs';
 
 class Anime extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
   }
 
   componentDidMount () {
@@ -15,7 +15,7 @@ class Anime extends React.Component {
   componentWillUnmount () {
 
   }
-
+  
   render () {
     return null; 
   }
