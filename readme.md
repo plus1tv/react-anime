@@ -10,6 +10,12 @@
 
 A port of anime.js to React.
 
+## Install
+```bash
+npm install --save react-anime
+```
+
+## Usage
 ```js
 import React from 'react';
 import {Anime} from 'react-anime';
@@ -26,6 +32,36 @@ let root = (props, state) => (
       <img src="kanye.png" />
     </Anime>
 );
+```
+
+## Contributing
+
+To contribute make sure you have `node v6.0.0+` and `npm v3.8.0+`
+
+##### Install packages
+```bash
+npm install
+```
+
+##### Project Scripts
+```bash
+# Create Development build of library
+npm run build:develop
+
+# Create Production build of library
+npm run build:production
+
+# Create both Production & Development build before finalizing pull request
+npm run build:publish
+
+# Run Tests
+npm run test
+
+# Watch Tests
+npm run test:watch
+
+# Run Tests and pass coverage to codecov
+npm run coverage
 ```
 
 [website-img]: docs/brand/cover.png
