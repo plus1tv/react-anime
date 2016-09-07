@@ -1,7 +1,10 @@
+sudo: false
 language: node_js
 cache:
   directories:
     - node_modules
+notifications:
+  email: false
 node_js:
   - '6'
 before_install:
@@ -12,7 +15,7 @@ script:
   - npm run test
   - npm run build:publish
 after_success:
-  - npm run coverage
+- npm run coverage
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
