@@ -2,7 +2,7 @@
 
 # [react-anime](https://alain.xyz/react-anime)
 
-<!---[![Npm Package][npm-img]][npm-url]-->
+[![Npm Package][npm-img]][npm-url]
 [![Travis CI][travis-img]][travis-url]
 ![Release][release-img]
 [![License][license-img]][license-url]
@@ -87,3 +87,5 @@ npm run coverage
 [codecov-url]: https://codecov.io/gh/alaingalvan/react-anime
 [npm-img]: https://img.shields.io/npm/v/react-anime.svg?style=flat-square
 [npm-url]: http://npm.im/react-anime
+[npm-download-img]: https://img.shields.io/npm/dm/react-anime.svg?style=flat-square
+
