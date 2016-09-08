@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Anime from './../dist/anime.min.js';
+import Anime from 'react-anime';
 
 let App = () =>
       <Anime easing="easeOutElastic"
