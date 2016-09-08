@@ -1,1 +1,1 @@
-exports[`test Anime Snapshot 1`] = `null`;
+exports[`test Anime single child Snapshot 1`] = `<div />`;
