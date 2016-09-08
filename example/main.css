@@ -1,0 +1,10 @@
+body {
+  background: #18212D;
+  color: '#fff';
+  font-family: 'sans-serif';
+-webkit-font-smoothing: antialiased;
+}
+section footer {
+  color: '#fff';
+  padding-top: 2em;
+}

@@ -1,6 +1,4 @@
-// @flow
-
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import anime from 'animejs';
 
 class Anime extends React.Component {
@@ -20,7 +18,6 @@ class Anime extends React.Component {
   }
 
   render () {
-
     let children = [];
     if (this.props.children) {
       if (Array.isArray(this.props.children))
