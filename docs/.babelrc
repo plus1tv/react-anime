@@ -9,7 +9,6 @@
     "stage-2"
   ],
   "plugins": [
-    "syntax-jsx",
-    "react-hot-loader/babel"
+    "syntax-jsx"
   ]
 }
