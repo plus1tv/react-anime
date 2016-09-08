@@ -1,3 +1,5 @@
+[![Cover][cover-img]][cover-url]
+
 # [react-anime](https://alain.xyz/react-anime)
 
 <!---[![Npm Package][npm-img]][npm-url]-->
@@ -8,7 +10,7 @@
 [![Dependency Status][david-img]][david-url]
 [![devDependency Status][david-dev-img]][david-dev-url]
 
-A port of anime.js to React.
+A port of [anime.js](http://anime-js.com) to React.
 
 ## Install
 
@@ -23,12 +25,14 @@ import React from 'react';
 import Anime from 'react-anime';
 
 let root = (props, state) => (
-    <Anime easing="linear"
+    <Anime easing="easeOutElastic"
            loop={true}
-           duration={5000}
-           delay={(el, index) => index * 80}
-           start={{tranlateX: 0}}
-           end={{tranlateX: 10}}>
+           duration={1000}
+           direction="alternate"
+           loop={true}
+           delay={(el, index) => index * 240}
+           translateX='13rem'
+           scale={[.75, .9]}>
       <img src="harambe.png" />
       <img src="trump.png" />
       <img src="kanye.png" />
@@ -62,8 +66,8 @@ npm run test:watch
 npm run coverage
 ```
 
-[website-img]: docs/brand/cover.png
-[website-url]: https://alain.xyz/libraries/react-anime
+[cover-img]: docs/cover.gif
+[cover-url]: http://codepen.io/alaingalvan/details/EgjbKP/
 [release-img]: https://img.shields.io/badge/release-0.1.0-4dbfcc.svg?style=flat-square
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT

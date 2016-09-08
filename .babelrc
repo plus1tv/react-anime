@@ -5,6 +5,7 @@
     "node": true
   },
   "presets": [
+    "stage-2",
     "es2015",
     "react"
   ],

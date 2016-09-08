@@ -4,7 +4,7 @@ var env = process.env.NODE_ENV;
 var config = {
 
   output: {
-    library: 'ReactAnimate',
+    library: 'ReactAnime',
     libraryTarget: 'umd'
   },
 
@@ -40,7 +40,7 @@ var config = {
   ],
 
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
