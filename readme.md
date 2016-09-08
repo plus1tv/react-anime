@@ -81,7 +81,7 @@ npm run coverage
 [david-img]: https://david-dm.org/alaingalvan/react-anime.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/alaingalvan/react-anime#info=devDependencies
 [david-dev-img]: https://david-dm.org/alaingalvan/react-anime/dev-status.svg?style=flat-square
-[travis-img]: https://img.shields.io/travis/alaingalvan/react-anime.svg?style=flat-square
+[travis-img]: https://img.shields.io/travis/stelatech/react-anime.svg?style=flat-square
 [travis-url]:https://travis-ci.org/alaingalvan/react-anime
 [codecov-img]:https://img.shields.io/codecov/c/github/alaingalvan/react-anime.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/alaingalvan/react-anime
