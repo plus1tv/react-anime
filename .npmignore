@@ -8,3 +8,4 @@ src
 webpack.config.js
 .travis.yml
 .vscode
+example

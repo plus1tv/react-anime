@@ -1,12 +1,13 @@
 {
   "name": "react-anime",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Bringing anime.js to the React Community!",
   "main": "dist/anime.min.js",
   "scripts": {
     "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
     "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
     "build:publish": "npm run build:develop && npm run build:production",
+    "build:cdn": "cross-env NODE_ENV=production webpack --config webpack.cdn.js src/anime.js dist/cdn/anime.min.js",
     "test": "jest --coverage",
     "coverage": "jest && codecov",
     "test:watch": "jest --converage --watch"
