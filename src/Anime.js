@@ -3,35 +3,43 @@ import anime from 'animejs';
 
 class Anime extends React.Component {
 
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.ref = [];
   }
 
-  componentDidMount () {
-    let c = Object.assign({targets: this.ref}, this.props);
-    this.anime = anime(c);
+  componentDidMount() {
+
+    let animeProps = {
+          targets: this.ref, 
+          ...this.props 
+      };
+
+    delete animeProps.children;
+
+    this.anime = anime(animeProps);
+
   }
 
-  addRef = (newRef) => {
-    this.ref = [...this.ref, newRef];
+addRef = (newRef) => {
+  this.ref = [...this.ref, newRef];
+}
+
+render() {
+  let children = [];
+  if (this.props.children) {
+    if (Array.isArray(this.props.children))
+      children = this.props.children;
+    else
+      children = [];
   }
 
-  render () {
-    let children = [];
-    if (this.props.children) {
-      if (Array.isArray(this.props.children))
-        children = this.props.children;
-      else
-        children = [];
-    }
-
-    return  (
-      <div>
-        {children.map((child, i) => (React.cloneElement(child, {key: i, ref: this.addRef})))}
-      </div>
-    );
-  }
+  return (
+    <div>
+      {children.map((child, i) => (React.cloneElement(child, { key: i, ref: this.addRef })))}
+    </div>
+  );
+}
 }
 
 export default Anime;

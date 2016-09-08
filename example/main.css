@@ -1,9 +1,118 @@
+@font-face {
+  font-family: 'Circular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1137/Circular-Book.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1137/Circular-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #18212D;
+}
+
+body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  color: white;
+  font-family: 'Circular', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 18rem;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #206EFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+
+footer span {
+  opacity: .5;
+}
+
+.logo img {
+  width: 75px;
+  height: 16px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 8rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.red {
+  background-color: #FF324A;
+}
+
+.green {
+  background-color: #31FFA6;
+}
+
+.blue {
+  background-color: #206EFF;
+}
+
+.yellow {
+  background-color: #FFFF99;
+}
+
+html,
 body {
   background: #18212D;
   color: '#fff';
   font-family: 'sans-serif';
--webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
+
+div {
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 50%;
+}
+
 section footer {
   color: '#fff';
   padding-top: 2em;
