@@ -117,3 +117,14 @@ section footer {
   color: '#fff';
   padding-top: 2em;
 }
+
+.github {
+  font-family: 'Circular', 'sans-serif';
+  height: 50px;
+  font-size: 25px;
+  border-radius: 2px;
+  background-color: #1d2938;
+  padding-top: 9px;
+  color: #fff;
+  border: none;
+}
