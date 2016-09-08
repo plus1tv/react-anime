@@ -10,7 +10,13 @@
 [![Dependency Status][david-img]][david-url]
 [![devDependency Status][david-dev-img]][david-dev-url]
 
-A port of [anime.js](http://anime-js.com) to React.
+react-anime was written in an effort to make animations easier to work with. We
+made this possible by wrapping the awesome flexible yet lightweight JavaScript
+animation library, [anime](https://github.com/juliangarnier/anime) in a react
+component. Simply pass some props and your awesome animations come to life.
+
+Inspiration for this library came because [react-motion](https://github.com/chenglou/react-motion) could get really complex really really fast when animating several things and trying to coordinate
+with the animations. Also it wasn't nice to see large portions of some component code filled with callbacks. React-Motion nonetheless is an awesome animation library!
 
 ## Install
 
@@ -25,18 +31,18 @@ import React from 'react';
 import Anime from 'react-anime';
 
 let root = (props, state) => (
-    <Anime easing="easeOutElastic"
-           loop={true}
-           duration={1000}
-           direction="alternate"
-           loop={true}
-           delay={(el, index) => index * 240}
-           translateX='13rem'
-           scale={[.75, .9]}>
-      <img src="harambe.png" />
-      <img src="trump.png" />
-      <img src="kanye.png" />
-    </Anime>
+  <Anime easing="easeOutElastic"
+         loop={true}
+         duration={1000}
+         direction="alternate"
+         loop={true}
+         delay={(el, index) => index * 240}
+         translateX='13rem'
+         scale={[.75, .9]}>
+    <div className="blue"/>
+    <div className="green"/>
+    <div className="red"/>
+  </Anime>
 );
 ```
 
