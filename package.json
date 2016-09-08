@@ -1,6 +1,6 @@
 {
   "name": "react-anime",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Bringing anime.js to the React Community!",
   "main": "dist/anime.min.js",
   "scripts": {
@@ -20,8 +20,13 @@
     "url": "git+ssh://git@github.com/alaingalvan/react-anime.git"
   },
   "keywords": [
-    "animations",
-    "anime"
+    "animation",
+    "anime",
+    "react",
+    "motion",
+    "transition",
+    "tween",
+    "component"
   ],
   "author": "Alain Galvan",
   "contributors": [
