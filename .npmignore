@@ -1,0 +1,10 @@
+__tests__
+coverage
+docs
+src
+.babelrc
+.eslintrc
+.flowconfig
+webpack.config.js
+.travis.yml
+.vscode

@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Anime from './../src/Anime.js';
+import Anime from './../src/anime.js';
 
 // refular function / expression test / unit test
 test('Anime', () => {
