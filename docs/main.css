@@ -20,6 +20,7 @@ body {
 }
 
 body {
+  text-align: center;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -30,7 +31,11 @@ body {
   font-family: 'Circular', 'sans-serif';
   -webkit-font-smoothing: antialiased;
 }
-
+body h1{
+  font-family: 'Circular', 'sans-serif';
+  margin: 0;
+  font-size: 35px;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -39,11 +44,6 @@ section {
   max-width: 18rem;
   margin: auto;
   text-align: center;
-}
-
-h1 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
 }
 
 a {
@@ -116,4 +116,15 @@ div {
 section footer {
   color: '#fff';
   padding-top: 2em;
+}
+
+.github {
+  font-family: 'Circular', 'sans-serif';
+  height: 50px;
+  font-size: 25px;
+  border-radius: 2px;
+  background-color: #1d2938;
+  padding-top: 9px;
+  color: #fff;
+  border: none;
 }

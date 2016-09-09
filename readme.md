@@ -1,6 +1,6 @@
 [![Cover][cover-img]][cover-url]
 
-# [react-anime](https://alain.xyz/react-anime)
+# react-anime
 
 [![Npm Package][npm-img]][npm-url]
 [![Travis CI][travis-img]][travis-url]
@@ -124,7 +124,7 @@ npm run test:watch
 npm run coverage
 ```
 
-[cover-img]: docs/cover.gif
+[cover-img]: assets/cover.gif
 [cover-url]: http://codepen.io/alaingalvan/details/EgjbKP/
 [release-img]: https://img.shields.io/badge/release-0.1.5-4dbfcc.svg?style=flat-square
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
@@ -140,4 +140,3 @@ npm run coverage
 [npm-img]: https://img.shields.io/npm/v/react-anime.svg?style=flat-square
 [npm-url]: http://npm.im/react-anime
 [npm-download-img]: https://img.shields.io/npm/dm/react-anime.svg?style=flat-square
-
