@@ -1,7 +1,7 @@
 __tests__
 coverage
 docs
-src/Anime.js
+src
 
 .babelrc
 .eslintrc

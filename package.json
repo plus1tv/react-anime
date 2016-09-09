@@ -1,12 +1,10 @@
 {
   "name": "react-anime",
-  "version": "0.1.7",
+  "version": "0.1.10",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "main": "dist/anime.min.js",
   "browser": "dist/anime.browser.js",
-  "typescript": {
-    "definition": "src/Anime.d.ts"
-  },
+  "typings": "./Anime.d.ts",
   "scripts": {
     "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
     "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
