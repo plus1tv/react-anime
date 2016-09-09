@@ -3,5 +3,6 @@
 [include]
 
 [libs]
+src/Anime.d.ts
 
 [options]

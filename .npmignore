@@ -1,7 +1,8 @@
 __tests__
 coverage
 docs
-src
+src/Anime.js
+
 .babelrc
 .eslintrc
 .flowconfig

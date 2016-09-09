@@ -3,11 +3,13 @@
   "version": "0.1.5",
   "description": "Bringing anime.js to the React Community!",
   "main": "dist/anime.min.js",
+  "browser": "dist/anime.browser.js",
+  "typescript": "src/Anime.d.ts",
   "scripts": {
     "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
     "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
     "build:publish": "npm run build:develop && npm run build:production",
-    "build:cdn": "cross-env NODE_ENV=production webpack --config webpack.cdn.js src/anime.js dist/cdn/anime.min.js",
+    "build:cdn": "cross-env NODE_ENV=production webpack --config webpack.browser.js src/anime.js dist/anime.browser.js",
     "test": "jest --coverage",
     "coverage": "jest && codecov",
     "test:watch": "jest --converage --watch"
@@ -43,6 +45,7 @@
   },
   "homepage": "https://github.com/alaingalvan/react-anime#readme",
   "devDependencies": {
+    "@types/react": "^0.14.34",
     "babel-cli": "6.14.0",
     "babel-core": "6.14.0",
     "babel-jest": "15.0.0",
