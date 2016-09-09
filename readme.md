@@ -32,7 +32,6 @@ import Anime from 'react-anime';
 
 let root = (props, state) => (
   <Anime easing="easeOutElastic"
-         loop={true}
          duration={1000}
          direction="alternate"
          loop={true}
