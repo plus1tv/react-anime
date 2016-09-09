@@ -6,7 +6,7 @@ src
 .babelrc
 .eslintrc
 .flowconfig
-webpack.config.js
+webpack.*.js
 .travis.yml
 .vscode
 example
