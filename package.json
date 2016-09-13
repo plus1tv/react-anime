@@ -8,8 +8,8 @@
   "scripts": {
     "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
     "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
-    "build:publish": "npm run build:develop && npm run build:production",
-    "build:cdn": "cross-env NODE_ENV=production webpack --config webpack.browser.js src/anime.js dist/anime.browser.js",
+    "build:publish": "npm run build:develop && npm run build:production && npm run build:browser",
+    "build:browser": "cross-env NODE_ENV=production webpack --config webpack.browser.js src/anime.js dist/anime.browser.js",
     "test": "jest --coverage",
     "coverage": "jest && codecov",
     "test:watch": "jest --converage --watch"
@@ -59,9 +59,9 @@
     "codecov": "1.0.1",
     "coveralls": "2.11.12",
     "cross-env": "2.0.1",
-    "eslint": "3.4.0",
+    "eslint": "3.5.0",
     "eslint-plugin-babel": "3.3.0",
-    "eslint-plugin-react": "6.2.0",
+    "eslint-plugin-react": "6.2.1",
     "flow-bin": "0.32.0",
     "jest": "^15.1.1",
     "react-test-renderer": "15.3.1",

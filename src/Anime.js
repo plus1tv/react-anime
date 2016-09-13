@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 import anime from 'animejs';
 
-class Anime extends React.Component {
+class Anime extends Component {
 
   constructor(props) {
     super(props);
-    this.ref = [];
+    this.targets = [];
   }
 
   componentDidMount() {
 
     let animeProps = {
-          targets: this.ref, 
-          ...this.props 
-      };
+      targets: this.targets,
+          ...this.props
+  };
 
     delete animeProps.children;
 
-    this.anime = anime(animeProps);
+this.anime = anime(animeProps);
 
   }
 
-addRef = (newRef) => {
-  this.ref = [...this.ref, newRef];
+addTarget = (newTarget) => {
+  this.targets = [...this.targets, newTarget];
 }
 
 render() {
@@ -36,10 +36,10 @@ render() {
 
   return (
     <div>
-      {children.map((child, i) => (React.cloneElement(child, { key: i, ref: this.addRef })))}
+      {children.map((child, i) => (React.cloneElement(child, { key: i, ref: this.addTarget })))}
     </div>
   );
-}
+  }
 }
 
 export default Anime;

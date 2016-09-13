@@ -32,8 +32,6 @@ import Anime from 'react-anime';
 
 let root = (props, state) => (
   <Anime easing="easeOutElastic"
-         loop={true}
-         duration={1000}
          direction="alternate"
          loop={true}
          delay={(el, index) => index * 240}
@@ -71,7 +69,7 @@ The API is based off [anime.js](https://github.com/juliangarnier/anime) document
 
 |        Prop       |      Type       |
 |:-----------------:|:----------------|
-| `translateX`      | `AnimationProp` |
+| `translateX`      | `AnimationProp (Above)` |
 | `translateY`      | `AnimationProp` |
 | `rotate`          | `AnimationProp` |
 | `scale`           | `AnimationProp` |
