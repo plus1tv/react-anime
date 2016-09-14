@@ -31,7 +31,7 @@ render() {
     if (Array.isArray(this.props.children))
       children = this.props.children;
     else
-      children = [];
+      children = [this.props.children];
   }
 
   return (
