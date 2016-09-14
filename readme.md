@@ -125,7 +125,7 @@ npm run coverage
 
 [cover-img]: assets/cover.gif
 [cover-url]: http://codepen.io/alaingalvan/details/EgjbKP/
-[release-img]: https://img.shields.io/badge/release-0.1.10-4dbfcc.svg?style=flat-square
+[release-img]: https://img.shields.io/badge/release-0.2.2-4dbfcc.svg?style=flat-square
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
 [david-url]: https://david-dm.org/alaingalvan/react-anime
