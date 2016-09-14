@@ -16,7 +16,7 @@
   "dependencies": {
     "animejs": "1.1.1",
     "react": "15.3.1",
-    "react-anime": "0.2.0",
+    "react-anime": "0.2.1",
     "react-dom": "15.3.1"
   },
   "devDependencies": {
