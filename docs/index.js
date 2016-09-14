@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Anime from 'react-anime';
+import Anime from './../dist/anime.js';
 
 let App = () =>
       <Anime easing="easeOutElastic"
@@ -12,8 +12,6 @@ let App = () =>
            translateX='13rem'
            scale={[.75, .9]}>
         <div className="blue"/>
-        <div className="green"/>
-        <div className="red"/>
       </Anime>
 
 let node = document.getElementById('app');
