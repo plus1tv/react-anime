@@ -5,10 +5,10 @@
 [![Npm Package][npm-img]][npm-url]
 [![Travis CI][travis-img]][travis-url]
 ![Release][release-img]
-[![License][license-img]][license-url]
 [![Codecov][codecov-img]][codecov-url]
 [![Dependency Status][david-img]][david-url]
 [![devDependency Status][david-dev-img]][david-dev-url]
+[![License][license-img]][license-url]
 
 react-anime was written in an effort to make animations easier to work with. We
 made this possible by wrapping the awesome flexible yet lightweight JavaScript
