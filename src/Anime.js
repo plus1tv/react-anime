@@ -35,9 +35,9 @@ render() {
   }
 
   return (
-    <div>
+    <g>
       {children.map((child, i) => (React.cloneElement(child, { key: i, ref: this.addTarget })))}
-    </div>
+    </g>
   );
   }
 }

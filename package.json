@@ -1,6 +1,6 @@
 {
   "name": "react-anime",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "main": "dist/anime.min.js",
   "typings": "./Anime.d.ts",

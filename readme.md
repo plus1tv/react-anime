@@ -4,7 +4,6 @@
 
 [![Npm Package][npm-img]][npm-url]
 [![Travis CI][travis-img]][travis-url]
-![Release][release-img]
 [![License][license-img]][license-url]
 [![Codecov][codecov-img]][codecov-url]
 [![Dependency Status][david-img]][david-url]
@@ -125,7 +124,6 @@ npm run coverage
 
 [cover-img]: assets/cover.gif
 [cover-url]: http://codepen.io/alaingalvan/details/EgjbKP/
-[release-img]: https://img.shields.io/badge/release-0.2.2-4dbfcc.svg?style=flat-square
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
 [david-url]: https://david-dm.org/alaingalvan/react-anime

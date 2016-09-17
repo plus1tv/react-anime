@@ -1,7 +1,9 @@
 __tests__
 coverage
 docs
+assets
 src
+
 
 .babelrc
 .eslintrc
