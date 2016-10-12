@@ -3,9 +3,7 @@
 # react-anime
 
 [![Npm Package][npm-img]][npm-url]
-[![Travis CI][travis-img]][travis-url]
 [![License][license-img]][license-url]
-[![Codecov][codecov-img]][codecov-url]
 [![Dependency Status][david-img]][david-url]
 [![devDependency Status][david-dev-img]][david-dev-url]
 
