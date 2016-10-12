@@ -10,17 +10,24 @@ class Anime extends React.Component {
 
   componentDidMount() {
 
-    let animeProps = Object.assign({}, this.props, { targets: this.targets });
+    this.createAnime(this.props);
+
+  }
+
+  shouldComponentUpdate(nextProps) {
+
+    this.createAnime(nextProps);
+
+    return true;
+
+  }
+
+  createAnime = (props) => {
+    let animeProps = Object.assign({}, { targets: this.targets }, props)
 
     delete animeProps.children;
 
     this.anime = anime(animeProps);
-  }
-
-  shouldComponentUpdate(nextProps) {
-    this.anime = anime(Object.assign({}, { targets: this.targets }, nextProps));
-
-    return true;
   }
 
   addTarget = (newTarget) => {
