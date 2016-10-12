@@ -97,6 +97,35 @@ The API is based off [anime.js](https://github.com/juliangarnier/anime) document
 
 And more.
 
+## Examples
+
+### Reactive update
+
+Say you want your animation to play when an the state of your component changes:
+
+```js
+class Documentation extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      open: false
+    }
+  }
+
+  openDocs = () => {
+    this.setstate((prevState) => ({open: prevState.open}))
+  }
+
+  render() {
+    return (<Anime easing="easeOutElastic"
+           opacity={this.state.open ? [0, 1] : [1: 0]}>
+        <MarkdownDocs/>
+      </Anime>)
+  }
+}
+```
+
 ## Contributing
 
 To contribute make sure you have `node v6.0.0+` and `npm v3.8.0+`

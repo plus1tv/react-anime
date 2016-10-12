@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import anime from 'animejs';
 
-class Anime extends Component {
+class Anime extends React.Component {
 
   constructor(props) {
     super(props);
@@ -10,35 +10,37 @@ class Anime extends Component {
 
   componentDidMount() {
 
-    let animeProps = {
-      targets: this.targets,
-          ...this.props
-  };
+    let animeProps = Object.assign({}, this.props, { targets: this.targets });
 
     delete animeProps.children;
 
-this.anime = anime(animeProps);
-
+    this.anime = anime(animeProps);
   }
 
-addTarget = (newTarget) => {
-  this.targets = [...this.targets, newTarget];
-}
+  shouldComponentUpdate(nextProps) {
+    this.anime = anime(Object.assign({}, { targets: this.targets }, nextProps));
 
-render() {
-  let children = [];
-  if (this.props.children) {
-    if (Array.isArray(this.props.children))
-      children = this.props.children;
-    else
-      children = [this.props.children];
+    return true;
   }
 
-  return (
-    <g>
-      {children.map((child, i) => (React.cloneElement(child, { key: i, ref: this.addTarget })))}
-    </g>
-  );
+  addTarget = (newTarget) => {
+    this.targets = [...this.targets, newTarget];
+  }
+
+  render() {
+    let children = [];
+    if (this.props.children) {
+      if (Array.isArray(this.props.children))
+        children = this.props.children;
+      else
+        children = [this.props.children];
+    }
+
+    return (
+      <g>
+        {children.map((child, i) => (React.cloneElement(child, { key: i, ref: this.addTarget })))}
+      </g>
+    );
   }
 }
 
