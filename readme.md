@@ -153,14 +153,14 @@ npm run coverage
 [cover-url]: http://codepen.io/alaingalvan/details/EgjbKP/
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
-[david-url]: https://david-dm.org/alaingalvan/react-anime
-[david-img]: https://david-dm.org/alaingalvan/react-anime.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/alaingalvan/react-anime#info=devDependencies
-[david-dev-img]: https://david-dm.org/alaingalvan/react-anime/dev-status.svg?style=flat-square
+[david-url]: https://david-dm.org/stelatech/react-anime
+[david-img]: https://david-dm.org/stelatech/react-anime.svg?style=flat-square
+[david-dev-url]: https://david-dm.org/stelatech/react-anime#info=devDependencies
+[david-dev-img]: https://david-dm.org/stelatech/react-anime/dev-status.svg?style=flat-square
 [travis-img]: https://img.shields.io/travis/stelatech/react-anime.svg?style=flat-square
-[travis-url]:https://travis-ci.org/alaingalvan/react-anime
-[codecov-img]:https://img.shields.io/codecov/c/github/alaingalvan/react-anime.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/alaingalvan/react-anime
+[travis-url]:https://travis-ci.org/stelatech/react-anime
+[codecov-img]:https://img.shields.io/codecov/c/github/stelatech/react-anime.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/stelatech/react-anime
 [npm-img]: https://img.shields.io/npm/v/react-anime.svg?style=flat-square
 [npm-url]: http://npm.im/react-anime
 [npm-download-img]: https://img.shields.io/npm/dm/react-anime.svg?style=flat-square
