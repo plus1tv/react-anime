@@ -6,7 +6,7 @@
 [![License][license-img]][license-url]
 [![Dependency Status][david-img]][david-url]
 [![devDependency Status][david-dev-img]][david-dev-url]
-
+[![Known Vulnerabilities](https://snyk.io/test/npm/react-anime/badge.svg)](https://snyk.io/test/npm/react-anime)
 react-anime was written in an effort to make animations easier to work with. We
 made this possible by wrapping the awesome flexible yet lightweight JavaScript
 animation library, [anime](https://github.com/juliangarnier/anime) in a react
