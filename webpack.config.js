@@ -1,6 +1,29 @@
 var webpack = require('webpack');
 var env = process.env.NODE_ENV;
 
+var reactExternal = {
+  root: 'React',
+  commonjs2: 'react',
+  commonjs: 'react',
+  amd: 'react'
+};
+
+var reactDOMExternals = {
+  root: 'ReactDOM',
+  commonjs2: 'react-dom',
+  commonjs: 'react-dom',
+  amd: 'react-dom'
+};
+
+var animeExternals = {
+  "animejs": {
+    root: 'animejs',
+    commonjs2: 'animejs',
+    commonjs: 'animejs',
+    amd: 'animejs'
+  }
+}
+
 var config = {
 
   output: {
@@ -21,23 +44,11 @@ var config = {
   node: {
     Buffer: false
   },
-
-  externals: [
-    {
-      "react": {
-        root: 'React',
-        commonjs2: 'react',
-        commonjs: 'react',
-        amd: 'react'
-      },
-      "animejs": {
-        root: 'animejs',
-        commonjs2: 'animejs',
-        commonjs: 'animejs',
-        amd: 'animejs'
-      }
-    }
-  ],
+  externals: {
+    'react': reactExternal,
+    'react-dom': reactDOMExternals,
+    'animejs': animeExternals
+  },
 
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
