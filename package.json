@@ -1,6 +1,6 @@
 {
   "name": "react-anime",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "main": "dist/anime.min.js",
   "typings": "./Anime.d.ts",
@@ -66,8 +66,10 @@
     "webpack": "^2.1.0-beta.22"
   },
   "peerDependencies": {
-    "animejs": "^1.1.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
+  },
+  "dependencies": {
+    "animejs": "1.1.1"
   }
 }

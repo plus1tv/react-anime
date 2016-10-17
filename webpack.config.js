@@ -15,15 +15,6 @@ var reactDOMExternals = {
   amd: 'react-dom'
 };
 
-var animeExternals = {
-  "animejs": {
-    root: 'animejs',
-    commonjs2: 'animejs',
-    commonjs: 'animejs',
-    amd: 'animejs'
-  }
-}
-
 var config = {
 
   output: {
@@ -46,10 +37,8 @@ var config = {
   },
   externals: {
     'react': reactExternal,
-    'react-dom': reactDOMExternals,
-    'animejs': animeExternals
+    'react-dom': reactDOMExternals
   },
-
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
