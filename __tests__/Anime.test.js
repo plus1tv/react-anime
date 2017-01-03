@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Anime from './../src/anime.js';
+import Anime from 'anime.js';
 
 const reactAnimationFrame = (function() {
     var lastTime = 0;
