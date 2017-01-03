@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "main": "dist/anime.min.js",
-  "typings": "./Anime.d.ts",
+  "typings": "./anime.d.ts",
   "scripts": {
     "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
     "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
