@@ -6,10 +6,9 @@ cache:
 notifications:
   email: false
 node_js:
-  - '6'
+  - '7'
 before_install:
-  - npm i -g npm@^3.8.6
-  - npm install react react-dom animejs
+  - npm i
 before_script:
   - npm prune
 script:

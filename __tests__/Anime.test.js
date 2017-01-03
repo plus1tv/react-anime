@@ -36,29 +36,16 @@ it('Anime single child Snapshot', () => {
            duration={1000}
            direction="alternate"
            loop={true}
-           delay={(el, index) => index * 240}
-           translateX='13rem'
-           scale={[.75, .9]}>
-           <p>1</p>
-      </Anime>
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
-})
-
-it('Anime multi-child Snapshot', () => {
-  const tree = renderer.create(
-    <Anime easing="easeOutElastic"
-           loop={true}
-           duration={1000}
-           direction="alternate"
-           loop={true}
-           delay={(el, index) => index * 240}
-           translateX='13rem'
-           scale={[.75, .9]}>
+           delay={(el, index) => index * 240}>
            <p>1</p>
            <p>2</p>
-           <p>3</p>
-      </Anime>
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
-})
+      </Anime>,
+      {
+          createNodeMock: (element) => ({nodeType: true})
+      }
+  );
+
+  console.warn("@@@TREE!!!", tree)
+
+  expect(tree.toJSON()).toMatchSnapshot();
+});

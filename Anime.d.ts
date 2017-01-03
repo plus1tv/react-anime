@@ -1,7 +1,4 @@
-
 import * as React from 'react';
-
-export type TimingValues = ((el: Element, index?: number, len?: number) => number) | number;
 
 export type Easing =
   'easeInSine' |
@@ -37,7 +34,12 @@ export type Easing =
   'linear';
 
 export type AnimationProp =
-  { value: string | number, delay: TimingValues, duration?: TimingValues, easing?: Easing } |
+  {
+    value: string | number,
+    delay: ((el: Element, index?: number, len?: number) => number) | number,
+    duration?: ((el: Element, index?: number, len?: number) => number) | number,
+    easing?: Easing
+  } |
   string |
   number |
   (string | number)[] |
@@ -48,7 +50,7 @@ export interface AnimeProps {
   duration?: ((el: Element, index?: number, len?: number) => number) | number,
   autoplay?: boolean,
   loop?: number | boolean,
-  direction?:  'normal' | 'reverse' | 'alternate';
+  direction?: 'normal' | 'reverse' | 'alternate';
   easing?: Easing,
   elasticity?: number,
   round?: number | boolean,

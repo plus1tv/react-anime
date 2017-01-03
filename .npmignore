@@ -12,3 +12,4 @@ webpack.*.js
 .travis.yml
 .vscode
 example
+license.md

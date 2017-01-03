@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   // devtool: 'eval',
   entry: [
-    './index.js'
+    './main.js'
   ],
   output: {
     path: path.join(__dirname),
@@ -34,7 +34,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: ['babel-loader'],
-        include: path.join(__dirname, 'index.js')
+        include: path.join(__dirname, 'main.js')
       }
     ]
   }

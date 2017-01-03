@@ -1,6 +1,6 @@
 {
   "name": "react-anime",
-  "version": "0.3.4",
+  "version": "1.0.0",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "main": "dist/anime.min.js",
   "typings": "./Anime.d.ts",
@@ -8,8 +8,9 @@
     "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
     "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
     "build:publish": "npm run build:develop && npm run build:production",
+    "pretest": "jest -u",
     "test": "jest --coverage",
-    "coverage": "jest && codecov",
+    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
     "test:watch": "jest --converage --watch"
   },
   "jest": {
@@ -18,58 +19,61 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/alaingalvan/react-anime.git"
+    "url": "git+ssh://git@github.com/hyperfuse/react-anime.git"
   },
   "keywords": [
     "animation",
+    "animate",
     "anime",
     "react",
     "motion",
+    "css",
     "transition",
     "tween",
     "component"
   ],
-  "author": "Alain Galvan",
+  "author": "Alain Galvan <hi@alain.xyz>",
   "contributors": [
     {
       "name": "Kennet Postigo",
       "email": "kennetfpostigo@gmail.com",
-      "url": "http://stelatech.com/"
+      "url": " http://kpostigo.com"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alaingalvan/react-anime/issues"
+    "url": "https://github.com/hyperfuse/react-anime/issues"
   },
-  "homepage": "https://github.com/alaingalvan/react-anime#readme",
+  "homepage": "https://hyperfuse.github.io/react-anime",
   "devDependencies": {
-    "babel-cli": "6.16.0",
-    "babel-core": "6.17.0",
-    "babel-jest": "16.0.0",
-    "babel-loader": "6.2.5",
-    "babel-plugin-syntax-jsx": "6.13.0",
-    "babel-plugin-transform-class-properties": "6.16.0",
-    "babel-plugin-transform-flow-strip-types": "6.14.0",
-    "babel-polyfill": "6.16.0",
-    "babel-preset-es2015": "6.16.0",
-    "babel-preset-react": "6.16.0",
-    "babel-preset-stage-2": "^6.13.0",
-    "codecov": "1.0.1",
-    "coveralls": "2.11.14",
-    "cross-env": "3.1.2",
-    "eslint": "3.7.1",
-    "eslint-plugin-babel": "3.3.0",
-    "eslint-plugin-react": "6.4.1",
-    "flow-bin": "0.33.0",
-    "jest": "^16.0.1",
-    "react-test-renderer": "15.3.2",
-    "webpack": "^2.1.0-beta.22"
+    "babel-core": "^6.21.0",
+    "babel-jest": "^18.0.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "codecov": "^1.0.1",
+    "coveralls": "^2.11.15",
+    "cross-env": "^3.1.4",
+    "eslint": "^3.12.2",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-react": "^6.8.0",
+    "flow-bin": "^0.37.4",
+    "jest": "^18.1.0",
+    "nyc": "^10.0.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-test-renderer": "^15.4.1",
+    "webpack": "^1.14.0"
   },
   "peerDependencies": {
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
   },
   "dependencies": {
-    "animejs": "1.1.1"
+    "animejs": "^1.1.3"
   }
 }
