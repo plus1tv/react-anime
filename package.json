@@ -1,17 +1,14 @@
 {
   "name": "react-anime",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
-  "main": "dist/anime.min.js",
-  "typings": "./anime.d.ts",
+  "main": "dist/react-anime.js",
+  "typings": "dist/react-anime.d.ts",
   "scripts": {
-    "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
-    "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
-    "build:publish": "npm run build:develop && npm run build:production",
+    "build": "webpack src/react-anime.js dist/react-anime.js && cp src/react-anime.d.ts dist/react-anime.d.ts && cp src/react-anime.js.flow dist/react-anime.js.flow",
     "pretest": "jest -u",
     "test": "jest --coverage",
-    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
-    "test:watch": "jest --converage --watch"
+    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
@@ -35,6 +32,11 @@
   "author": "Alain Galvan <hi@alain.xyz>",
   "contributors": [
     {
+      "name": "Alain Galvan",
+      "email": "hi@alain.xyz",
+      "url": " https://alain.xyz"
+    },
+    {
       "name": "Kennet Postigo",
       "email": "kennetfpostigo@gmail.com",
       "url": " http://kpostigo.com"
@@ -46,34 +48,30 @@
   },
   "homepage": "https://hyperfuse.github.io/react-anime",
   "devDependencies": {
-    "babel-core": "^6.21.0",
-    "babel-jest": "^18.0.0",
-    "babel-loader": "^6.2.10",
+    "babel-core": "^6.24.0",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.1",
     "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-class-properties": "^6.19.0",
-    "babel-polyfill": "^6.20.0",
-    "babel-preset-es2015": "^6.16.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-2": "^6.18.0",
-    "codecov": "^1.0.1",
-    "coveralls": "^2.11.15",
-    "cross-env": "^3.1.4",
-    "eslint": "^3.12.2",
-    "eslint-plugin-babel": "^4.0.0",
-    "eslint-plugin-react": "^6.8.0",
-    "flow-bin": "^0.37.4",
-    "jest": "^18.1.0",
-    "nyc": "^10.0.0",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-test-renderer": "^15.4.1",
-    "webpack": "^1.14.0"
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "codecov": "^2.0.2",
+    "coveralls": "^2.12.0",
+    "flow-bin": "^0.41.0",
+    "flow-typed": "^2.0.0",
+    "jest": "^19.0.2",
+    "nyc": "^10.1.2",
+    "react-test-renderer": "^15.4.2",
+    "webpack": "^2.2.1"
   },
   "peerDependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react": "^15.x",
+    "react-dom": "^15.x"
   },
   "dependencies": {
-    "animejs": "^1.1.3"
+    "animejs": "^2.0.1"
   }
 }

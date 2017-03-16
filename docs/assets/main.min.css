@@ -1,0 +1,451 @@
+/**
+ * Fork of Eric Meyer's Reset
+ * Includes Default box-sizing/typekit
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+/**
+* Base Styles
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    z-index: -2;
+}
+
+body {
+    background-color: #101016;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+input {
+    border: 0 none;
+    background: rgba(0, 0, 0, 0);
+    color: #fff
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0
+}
+
+a:link, a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+a:active {
+    color: #ccc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1.12em;
+}
+
+h6 {
+    font-size: 1.05em;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 2.5em;
+}
+
+pre {
+    background-color: #282c34;
+    padding: 8px;
+    overflow: auto;
+    border-radius: 3px;
+    margin: 16px 0;
+}
+
+code {
+    font-family: 'Fira Code';
+    -webkit-font-variant-ligatures: normal;
+            font-variant-ligatures: normal;
+    line-height: 1.5em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+
+/* Article Specific CSS */
+
+article {
+    line-height: 1.5em;
+}
+
+article img {
+    display: block;
+    margin: auto;
+}
+
+article blockquote {
+    border-left-width: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 15px 20px;
+    margin: 0 0 1.1em;
+    border-left: 5px solid rgba(0, 0, 0, 0.075);
+}
+
+article strong {
+    font-weight: 500;
+}
+
+article a {
+    color: #eefeff;
+    text-decoration: underline;
+}
+
+article ul {
+    list-style: disc;
+    padding-left: 2em;
+}
+
+article ol {
+    list-style: circle;
+    padding-left: 2em;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6 {
+    padding: .5em 0;
+}code[class*="language-"] {
+	color: $white;
+	background: none;
+	font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+	text-align: left;
+	text-shadow: 0 -.1em .2em $black;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	  -o-tab-size: 4;
+	     tab-size: 4;
+	-webkit-hyphens: none;
+	    -ms-hyphens: none;
+	        hyphens: none;
+}
+code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+pre[class*="language-"] {
+	color: $white;
+	background: none;
+	font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+	text-align: left;
+	text-shadow: 0 -.1em .2em $black;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	  -o-tab-size: 4;
+	     tab-size: 4;
+	-webkit-hyphens: none;
+	    -ms-hyphens: none;
+	        hyphens: none;
+	background: hsl(0, 0%, 8%);
+	border-radius: .5em;
+	border: .3em solid hsl(0, 0%, 33%);
+	box-shadow: 1px 1px .5em $black inset;
+	margin: .5em 0;
+	overflow: auto;
+	padding: 1em;
+}
+pre[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+pre[class*="language-"] ::selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+pre[class*="language-"]::-moz-selection {
+	background: hsl(200, 4%, 16%);
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+pre[class*="language-"]::selection {
+	background: hsl(200, 4%, 16%);
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+code[class*="language-"]::-moz-selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+code[class*="language-"]::selection {
+	text-shadow: none;
+	background: hsla(0, 0%, 93%, 0.15);
+}
+.token {
+	position: relative;
+	z-index: 1
+}
+.token.comment {
+	color: hsl(0, 0%, 47%);
+}
+.token.prolog {
+	color: hsl(0, 0%, 47%);
+}
+.token.doctype {
+	color: hsl(0, 0%, 47%);
+}
+.token.cdata {
+	color: hsl(0, 0%, 47%);
+}
+.token.punctuation {
+	opacity: .7;
+}
+.token.tag {
+	color: hsl(14, 58%, 55%);
+}
+.token.boolean {
+	color: hsl(14, 58%, 55%);
+}
+.token.number {
+	color: hsl(14, 58%, 55%);
+}
+.token.deleted {
+	color: hsl(14, 58%, 55%);
+}
+.token.keyword {
+	color: hsl(53, 89%, 79%);
+}
+.token.property {
+	color: hsl(53, 89%, 79%);
+}
+.token.selector {
+	color: hsl(53, 89%, 79%);
+}
+.token.constant {
+	color: hsl(53, 89%, 79%);
+}
+.token.symbol {
+	color: hsl(53, 89%, 79%);
+}
+.token.builtin {
+	color: hsl(53, 89%, 79%);
+}
+.token.attr-name {
+	color: hsl(76, 21%, 52%);
+}
+.token.attr-value {
+	color: hsl(76, 21%, 52%);
+}
+.token.string {
+	color: hsl(76, 21%, 52%);
+}
+.token.char {
+	color: hsl(76, 21%, 52%);
+}
+.token.operator {
+	color: hsl(76, 21%, 52%);
+}
+.token.entity {
+	color: hsl(76, 21%, 52%);
+	cursor: help;
+}
+.token.url {
+	color: hsl(76, 21%, 52%);
+}
+.token.variable {
+	color: hsl(76, 21%, 52%);
+}
+.token.inserted {
+	color: hsl(76, 21%, 52%);
+}
+.token.atrule {
+	color: hsl(218, 22%, 55%);
+}
+.token.regex {
+	color: hsl(42, 75%, 65%);
+}
+.token.important {
+	color: hsl(42, 75%, 65%);
+	font-weight: bold;
+}
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+.namespace {
+	opacity: .7;
+}
+pre[data-line] {
+	padding: 1em 0 1em 3em;
+	position: relative;
+}
+.line-highlight {
+	background: hsla(0, 0%, 33%, 0.25);
+	background: -webkit-linear-gradient(left, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0, 33%, 0));
+	background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0, 33%, 0));
+	border-bottom: 1px dashed hsl(0, 0%, 33%);
+	border-top: 1px dashed hsl(0, 0%, 33%);
+	left: 0;
+	line-height: inherit;
+	margin-top: 0.75em;
+	padding: inherit 0;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	white-space: pre;
+	z-index: 0
+}
+.line-highlight:before {
+	background-color: hsl(215, 15%, 59%);
+	border-radius: 999px;
+	box-shadow: 0 1px $white;
+	color: hsl(24, 20%, 95%);
+	content: attr(data-start);
+	font: bold 65%/1.5 sans-serif;
+	left: .6em;
+	min-width: 1em;
+	padding: 0 .5em;
+	position: absolute;
+	text-align: center;
+	text-shadow: none;
+	top: .4em;
+	vertical-align: .3em;
+}
+:not(pre) > code[class*="language-"] {
+	background: hsl(0, 0%, 8%);
+	border-radius: .3em;
+	border: .13em solid hsl(0, 0%, 33%);
+	box-shadow: 1px 1px .3em -.1em $black inset;
+	padding: .15em .2em .05em;
+	white-space: normal;
+}
+.language-css .token.string {
+	color: hsl(76, 21%, 52%);
+}
+.style .token.string {
+	color: hsl(76, 21%, 52%);
+}
+.language-markup .token {
+}
+.language-markup .token.tag {
+	color: hsl(33, 33%, 52%);
+}
+.language-markup .token.attr-name {
+	color: hsl(33, 33%, 52%);
+}
+.language-markup .token.punctuation {
+	color: hsl(33, 33%, 52%);
+}
+.line-highlight[data-end]:after {
+	background-color: hsl(215, 15%, 59%);
+	border-radius: 999px;
+	box-shadow: 0 1px $white;
+	color: hsl(24, 20%, 95%);
+	content: attr(data-start);
+	font: bold 65%/1.5 sans-serif;
+	left: .6em;
+	min-width: 1em;
+	padding: 0 .5em;
+	position: absolute;
+	text-align: center;
+	text-shadow: none;
+	top: .4em;
+	vertical-align: .3em;
+	bottom: .4em;
+	content: attr(data-end);
+	top: auto;
+}

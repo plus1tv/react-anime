@@ -1,6 +1,6 @@
-[![Cover][cover-img]][cover-url]
-
-# react-anime
+<p align="center">
+  <a href="https://hyperfuse.github.io/react-anime"><img src="docs/assets/logo.png" alt="React Anime Logo"/></a>
+</p>
 
 [![Npm Package][npm-img]][npm-url]
 [![License][license-img]][license-url]
@@ -13,18 +13,18 @@
 npm i react-anime -S
 ```
 
-A super easy animation library for React built on top of the [anime](https://github.com/juliangarnier/anime) animation library. 
+A super easy animation library for React built on top of [anime.js](https://github.com/juliangarnier/anime).
 
-To use it, place an `<Anime>` component in your render function and what you want to animate inside.
+To use it, place an `<Anime>` component and what you want to animate inside.
 
 ## Features
 
-- Animate nearly all CSS and SVG attributes by adding a prop with their name (eg. `opacity`, `translateX`).
-- Nested animations is as easy as putting an `<Anime>` component inside another.
-- Cascading animations through `delay` prop.
+- Animate nearly all CSS, SVG, & DOM attributes by adding a prop with their name (eg. `opacity`, `backgroundColor`, `translateX`).
+- Nested animations are as easy as putting an `<Anime>` component inside another.
 - Animations can react to changes in `state`.
-- Easy Mount/Unmounting workflow.
-- TypeScript/Flow definitions included.
+- Cascading animations through `delay` prop.
+- Easily make mounting/unmounting animations.
+- [TypeScript](http://typescriptlang.org/)/[Flow](https://flowtype.org/) definitions included.
 
 ## Usage
 
@@ -32,7 +32,7 @@ To use it, place an `<Anime>` component in your render function and what you wan
 import React from 'react';
 import Anime from 'react-anime';
 
-let root = (props, state) => (
+const App = (props) => (
   <Anime delay={(e, i) => i * 100}
          scale={[.1, .9]}>
     <div className="blue"/>
@@ -42,9 +42,9 @@ let root = (props, state) => (
 );
 ```
 
-See more in our [API Docs](https://hyperfuse.github.io/react-anime#docs) and [Examples](https://hyperfuse.github.io/react-anime#examples).
+See more in our [API Docs](https://hyperfuse.github.io/react-anime/#/api) and [Examples](https://hyperfuse.github.io/react-anime/#/examples).
 
-[cover-img]: docs/cover.gif
+[cover-img]: docs/assets/logo.png
 [cover-url]: https://hyperfuse.github.io/react-anime
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT

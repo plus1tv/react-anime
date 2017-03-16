@@ -1,11 +1,19 @@
+# Build
+dist
+build/Release
+bin
+
 # Dependency directory
 node_modules
 jspm_packages
-dist
+
+# Unit Testing
 .DS_Store
 .nyc_output
 coverage
 
+# Flow
+flow-typed
 
 # Editors
 .vscode
@@ -23,7 +31,3 @@ pids
 
 # node-waf configuration
 .lock-wscript
-
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
-bin
