@@ -6,6 +6,9 @@
   "typings": "dist/react-anime.d.ts",
   "scripts": {
     "build": "webpack src/react-anime.js dist/react-anime.js && cp src/react-anime.d.ts dist/react-anime.d.ts && cp src/react-anime.js.flow dist/react-anime.js.flow",
+    "build:publish": "npm run build:develop && npm run build:production",
+    "build:develop": "cross-env NODE_ENV=development webpack src/anime.js dist/anime.js",
+    "build:production": "cross-env NODE_ENV=production webpack src/anime.js dist/anime.min.js",
     "pretest": "jest -u",
     "test": "jest --coverage",
     "coverage": "nyc npm test && nyc report --reporter=lcov && codecov"
