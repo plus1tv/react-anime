@@ -8,6 +8,7 @@ notifications:
 node_js:
   - '7'
 before_install:
+  - cd packages/react-anime
   - npm i
 before_script:
   - npm prune

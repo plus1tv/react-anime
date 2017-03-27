@@ -1,77 +1,11 @@
 {
-  "name": "react-anime",
-  "version": "2.0.1",
-  "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
-  "main": "dist/react-anime.js",
-  "typings": "dist/react-anime.d.ts",
+  "name": "react-anime-monorepo",
+  "version": "2.0.2",
   "scripts": {
-    "build": "webpack src/react-anime.js dist/react-anime.js && cp src/react-anime.d.ts dist/react-anime.d.ts && cp src/react-anime.js.flow dist/react-anime.js.flow",
-    "pretest": "jest -u",
-    "test": "jest --coverage",
-    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov"
-  },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/hyperfuse/react-anime.git"
-  },
-  "keywords": [
-    "animation",
-    "animate",
-    "anime",
-    "react",
-    "motion",
-    "css",
-    "transition",
-    "tween",
-    "component"
-  ],
-  "author": "Alain Galvan <hi@alain.xyz>",
-  "contributors": [
-    {
-      "name": "Alain Galvan",
-      "email": "hi@alain.xyz",
-      "url": " https://alain.xyz"
-    },
-    {
-      "name": "Kennet Postigo",
-      "email": "kennetfpostigo@gmail.com",
-      "url": " http://kpostigo.com"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hyperfuse/react-anime/issues"
-  },
-  "homepage": "https://hyperfuse.github.io/react-anime",
-  "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-jest": "^19.0.0",
-    "babel-loader": "^6.4.1",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-class-properties": "^6.23.0",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-2": "^6.22.0",
-    "codecov": "^2.1.0",
-    "coveralls": "^2.12.0",
-    "flow-bin": "^0.42.0",
-    "flow-typed": "^2.0.0",
-    "jest": "^19.0.2",
-    "nyc": "^10.1.2",
-    "react-test-renderer": "^15.4.2",
-    "webpack": "^2.3.1"
-  },
-  "peerDependencies": {
-    "react": "^15.x",
-    "react-dom": "^15.x"
+    "start": "yarn || npm i",
+    "postinstall": "lerna bootstrap --npm-client=yarn"
   },
   "dependencies": {
-    "animejs": "^2.0.1"
+    "lerna": "2.0.0-beta.38"
   }
 }

@@ -14,14 +14,17 @@
     "pretest": "flow-typed install"
   },
   "dependencies": {
+    "file-loader": "^0.10.1",
     "flow-typed": "^2.0.0",
     "glamor": "^2.20.24",
     "prismjs": "^1.6.0",
     "randomcolor": "^0.4.4",
     "react": "15.4.2",
-    "react-anime": "^0.3.4",
+    "react-anime": "^2.0.2",
     "react-dom": "^15.4.2",
-    "react-router": "^4.0.0"
+    "react-router-dom": "^4.0.0",
+    "typeface-fira-mono": "^0.0.22",
+    "typeface-fira-sans": "^0.0.22"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",

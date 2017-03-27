@@ -8,15 +8,16 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
-    font-weight: 300;
-    color: #fff;
+    font-weight: 400;
+    color: #f1f1f1;
     z-index: -2;
+    font-variant-ligatures: contextual;
 }
 
 body {
-    background-color: #101016;
+    background-color: #16161b;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +30,7 @@ body {
 input {
     border: 0 none;
     background: rgba(0, 0, 0, 0);
-    color: #fff;
+    color: #f1f1f1;
     &:focus {
         outline: none;
     }
@@ -59,7 +60,7 @@ h5,
 h6 {
     font-style: normal;
     font-size: 3em;
-    font-weight: 100;
+    font-weight: 600;
 }
 
 h2 {
@@ -91,7 +92,8 @@ p {
 }
 
 pre {
-    background-color: #282c34;
+    background-color: #212429;
+    color: #ccc;
     padding: 8px;
     overflow: auto;
     border-radius: 3px;
@@ -99,7 +101,7 @@ pre {
 }
 
 code {
-    font-family: 'Fira Code';
+    font-family: 'Fira Mono';
     font-variant-ligatures: normal;
     line-height: 1.5em;
 }

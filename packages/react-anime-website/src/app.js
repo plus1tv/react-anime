@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { HashRouter, Match, Miss, Link, Redirect } from 'react-router';
+import { HashRouter, Route, Link, Redirect } from 'react-router-dom';
 import { Home, Api, CascadingList, ReactRouter, Svg } from './views';
 import { Nav } from './components';
 import { css } from 'glamor';
@@ -13,7 +13,7 @@ const styles = {
   flexDirection: 'row'
 }),
   page: css({
-    padding: '2em .5em'
+    padding: '3em 2em'
   })
 };
 
@@ -22,18 +22,17 @@ let FadeAnime = ({children}) => (<Anime opacity={[0, 1]}>{children}</Anime>);
 export default (
   <HashRouter>
     <div {...styles.root}>
-      <Nav />
       <div {...styles.page}>
-        <Match exactly pattern="/" component={Home} />
-        <Match pattern="/api" component={Api} />
-        <Match
-          pattern="/examples"
+        <Route exact path="/" component={Home} />
+        <Route exact path="/api" component={Api} />
+        <Route
+          path="/examples"
           render={() => <Redirect to="/cascading-list" />}
         />
-        <Match pattern="/cascading-list" component={CascadingList} />
-        <Match pattern="/react-router" component={ReactRouter} />
-        <Match pattern="/svg" component={Svg} />
-        <Miss render={() => <Redirect to="/" />} />
+        <Route exact path="/cascading-list" component={CascadingList} />
+        <Route exact path="/react-router" component={ReactRouter} />
+        <Route exact path="/svg" component={Svg} />
+        <Route render={() => <Redirect to="/" />} />
       </div>
     </div>
   </HashRouter>
