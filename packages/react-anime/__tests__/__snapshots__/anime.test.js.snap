@@ -1,4 +1,6 @@
-exports[`test Anime single child Snapshot 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anime multiple children snapshot 1`] = `
 <g>
   <p>
     1

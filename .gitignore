@@ -3,7 +3,7 @@ dist
 build/Release
 bin
 
-# Dependency directory
+# Dependency Directory
 node_modules
 jspm_packages
 

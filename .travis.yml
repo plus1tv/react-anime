@@ -14,7 +14,7 @@ before_script:
   - npm prune
 script:
   - npm run test
-  - npm run build:publish
+  - npm run build
 after_success:
 - npm run coverage
 branches:
