@@ -6,9 +6,11 @@
   "typings": "dist/react-anime.d.ts",
   "scripts": {
     "build": "webpack src/react-anime.js dist/react-anime.js && cp src/react-anime.d.ts dist/react-anime.d.ts && cp src/react-anime.js.flow dist/react-anime.js.flow",
+    "watch": "webpack -w src/react-anime.js dist/react-anime.js",
     "pretest": "jest -u",
     "test": "jest --coverage",
-    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov"
+    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
+    "prepublish": "npm run build"
   },
   "jest": {
     "coverageDirectory": "./coverage/",

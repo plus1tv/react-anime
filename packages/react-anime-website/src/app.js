@@ -10,6 +10,8 @@ const styles = {
   width: '100vw',
   height: '100vh',
   display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
   flexDirection: 'row'
 }),
   page: css({
@@ -22,7 +24,7 @@ let FadeAnime = ({children}) => (<Anime opacity={[0, 1]}>{children}</Anime>);
 export default (
   <HashRouter>
     <div {...styles.root}>
-      <div {...styles.page}>
+      <div>
         <Route exact path="/" component={Home} />
         <Route exact path="/api" component={Api} />
         <Route

@@ -4,7 +4,7 @@ import { Logo } from '../components';
 export class Home extends Component {
   render() {
     return (
-      <article style={{width: '100vw'}}>
+      <article style={{width: '50vw'}}>
         <Logo/>
       </article>
     );

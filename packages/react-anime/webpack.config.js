@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var env = process.env.NODE_ENV;
 
 var config = {
-  output: { library: 'ReactAnime', libraryTarget: 'umd' },
+  output: { library: 'ReactAnime', libraryTarget: 'commonjs2' },
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },

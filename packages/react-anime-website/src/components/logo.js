@@ -5,99 +5,229 @@ export class Logo extends Component {
   render() {
     return (
       <svg viewBox="0 0 280 144">
-        <path
-          style={styles.red}
-          d="M33.25,73h-14V45c0-15.439,12.561-28,28-28s28,12.561,28,28h-14c0-7.72-6.28-14-14-14s-14,6.28-14,14V73z"
-        />
-        <path
-          style={styles.blue}
-          d="M46.985,87c-7.797,0-14.118,6.268-14.118,14s6.321,14,14.118,14v14
-		c-15.594,0-28.235-12.536-28.235-28s12.641-28,28.235-28S75.22,85.536,75.22,101v28H61.102v-28C61.103,93.268,54.782,87,46.985,87z
-		"
-        />
-        <rect x="61.103" y="73" style={styles.red} width="14.118" height="56" />
-        <path
-          style={styles.red}
-          d="M103.456,101c0-7.732-6.321-14-14.118-14S75.22,93.268,75.22,101v28H61.102v-28
-		c0-15.464,12.641-28,28.235-28s28.235,12.536,28.235,28v28h-14.118v-28"
-        />
+        <g id="line-react">
+          <rect
+            x="215.3"
+            y="32"
+            style={styles.solid.green}
+            width="42"
+            height="12"
+          />
+          <path
+            style={styles.solid.red}
+            d="M20.3,72V45c0-14.888,12.112-27,27-27c14.553,0,26.455,11.573,26.982,26H62.267C61.75,36.194,55.235,30,47.3,30c-8.271,0-15,6.729-15,15v27H20.3z"
+          />
+          <path
+            style={styles.solid.green}
+            d="M257.3,71.982c-14.427-0.527-26-12.429-26-26.982V16h12v29c0,7.935,6.193,14.45,14,14.967V71.982z"
+          />
+          <path
+            style={styles.solid.red}
+            d="M74.3,71.982C60.204,71.467,48.833,60.096,48.318,46h12.015c0.495,7.476,6.491,13.472,13.967,13.967V71.982z"
+          />
+          <path
+            style={styles.solid.blue}
+            d="M160.3,72V45c0-8.271-6.729-15-15-15c-8.271,0-15,6.729-15,15c0,7.935,6.194,14.45,14,14.967v12.015c-14.427-0.527-26-12.429-26-26.982c0-14.888,12.112-27,27-27s27,12.112,27,27v27H160.3z"
+          />
+          <path
+            style={styles.solid.green}
+            d="M102.3,71.982c-14.427-0.527-26-12.429-26-26.982c0-14.888,12.112-27,27-27s27,12.112,27,27v13h-26V46h14v-1c0-8.271-6.729-15-15-15s-15,6.729-15,15c0,7.935,6.194,14.45,14,14.967V71.982z"
+          />
+          <path
+            style={styles.solid.red}
+            d="M187.3,72c-14.888,0-27-12.112-27-27s12.112-27,27-27h26v12h-26c-8.271,0-15,6.729-15,15s6.729,15,15,15h26v12H187.3z"
+          />
+        </g>
+        <g id="line-anime">
+          <path
+            style={styles.solid.blue}
+            d="M62.3,128v-27c0-8.271-6.729-15-15-15s-15,6.729-15,15c0,7.935,6.194,14.45,14,14.967v12.015c-14.427-0.527-26-12.428-26-26.981c0-14.888,12.112-27,27-27s27,12.112,27,27v27H62.3z"
+          />
+          <rect
+            x="62.3"
+            y="74"
+            style={styles.solid.red}
+            width="12"
+            height="54"
+          />
+          <path
+            style={styles.solid.red}
+            d="M104.3,128v-27c0-8.271-6.729-15-15-15c-8.148,0-14.737,6.619-15,15.068l0,26.932h-12l0.002-27.182C62.691,85.791,74.55,74,89.3,74c14.888,0,27,12.112,27,27v27H104.3z"
+          />
+          <rect
+            x="118.3"
+            y="74"
+            style={styles.solid.blue}
+            width="12"
+            height="54"
+          />
+          <path
+            style={styles.solid.blue}
+            d="M160.3,128v-27c0-8.271-6.729-15-15-15c-8.148,0-14.737,6.619-15,15.068l0,26.932h-12l0.002-27.182C118.691,85.791,130.55,74,145.3,74c14.888,0,27,12.112,27,27v27H160.3z"
+          />
+          <path
+            style={styles.solid.red}
+            d="M202.3,128v-27c0-8.271-6.729-15-15-15c-8.061,0-14.649,6.629-14.999,15.091L172.3,128h-12l0.004-27.241C160.821,85.769,172.68,74,187.3,74c14.888,0,27,12.112,27,27v27H202.3z"
+          />
+          <path
+            style={styles.solid.green}
+            d="M228.3,127.981c-14.427-0.527-26-12.428-26-26.981c0-14.888,12.112-27,27-27s27,12.112,27,27v13h-26v-12h14v-1c0-8.271-6.729-15-15-15s-15,6.729-15,15c0,7.935,6.193,14.45,14,14.967V127.981z"
+          />
+          <path
+            style={styles.solid.green}
+            d="M130.25,127.981c-14.427-0.527-26-12.428-26-26.981v-6h12v6c0,7.935,6.194,14.45,14,14.967V127.981z"
+          />
+          <circle style={styles.solid.green} cx="110.25" cy="80" r="6" />
+        </g>
+        <Anime
+          easing="easeOutQuad"
+          duration={3000}
+          strokeDashoffset={el => {
+            var pathLength = 0;
+            if (el.getTotalLength) {
+              pathLength = el.getTotalLength();
+              el.setAttribute('stroke-dasharray', pathLength);
+            }
+            return [pathLength, 0];
+          }}
+        >
+          <line
+            style={styles.line.green}
+            x1="214.25"
+            y1="38"
+            x2="258.25"
+            y2="38"
+          />
+          <path
+            style={styles.line.red}
+            d="M68.25,45c0-11.598-9.402-21-21-21s-21,9.402-21,21v28"
+          />
+          <path
+            style={styles.line.green}
+            d="M258.25,66c-11.598,0-21-9.402-21-21V15"
+          />
+          <path
+            style={styles.line.red}
+            d="M75.25,66c-11.598,0-21-9.402-21-21"
+          />
+          <path
+            style={styles.line.blue}
+            d="M145.25,66c-11.598,0-21-9.402-21-21s9.402-21,21-21s21,9.402,21,21v28"
+          />
+          <path
+            style={styles.line.green}
+            d="M103.25,66c-11.598,0-21-9.402-21-21s9.402-21,21-21s21,9.402,21,21v7h-21"
+          />
+          <path
+            style={styles.line.red}
+            d="M214.25,24h-27c-11.598,0-21,9.402-21,21s9.402,21,21,21h27"
+          />
+        </Anime>
+        <Anime
+          easing="easeOutQuad"
+          delay={1500}
+          duration={3000}
+          strokeDashoffset={el => {
+            var pathLength = 0;
+            if (el.getTotalLength) {
+              pathLength = el.getTotalLength();
+              el.setAttribute('stroke-dasharray', pathLength);
+            }
+            return [pathLength, 0];
+          }}
+        >
+          <path
+            id="anime-a"
+            style={styles.line.blue}
+            d="M47.3,122c-11.6,0-21-9.4-21-21s9.4-21,21-21s21,9.4,21,21v28"
+          />
+          <path id="anime-n-line" style={styles.line.red} d="M68.3,129V73" />
+          <path
+            id="anime-n"
+            style={styles.line.red}
+            d="M68.3,129v-28c0.3-11.6,9.4-21,21-21s21,9.4,21,21v28"
+          />
+          <path id="anime-m1-line" style={styles.line.blue} d="M124.3,129V73" />
+          <path
+            id="anime-m1"
+            style={styles.line.blue}
+            d="M124.3,129v-28c0.3-11.6,9.4-21,21-21s21,9.4,21,21v28"
+          />
+          <path
+            id="anime-m2"
+            style={styles.line.red}
+            d="M166.3,129v-28c0.4-11.6,9.4-21,21-21s21,9.4,21,21v28"
+          />
+          <path
+            id="anime-e"
+            style={styles.line.green}
+            d="M229.3,122c-11.6,0-21-9.4-21-21s9.4-21,21-21s21,9.4,21,21v7h-21"
+          />
+          <path
+            id="line-i"
+            style={styles.line.green}
+            d="M110.25,94v7c0,11.598,9.402,21,21,21"
+          />
+          <ellipse
+            id="dot-i"
+            style={styles.line.circle}
+            cx="110.25"
+            cy="80"
+            rx="7"
+            ry="7"
+          />
+        </Anime>
 
-        <path
-          style={styles.blue}
-          d="M131.691,101c0-7.732,6.321-14,14.118-14s14.118,6.268,14.118,14v28h14.118v-28
-		c0-15.464-12.641-28-28.235-28s-28.235,12.536-28.235,28H131.691L131.691,101z"
-        />
-        <rect
-          id="fill-m-1"
-          x="117.574"
-          y="73"
-          style={styles.blue}
-          width="14.118"
-          height="56"
-        />
-        <path
-          id="fill-m-3"
-          style={styles.red}
-          d="M202.279,101c0-7.732-6.321-14-14.118-14s-14.118,6.268-14.118,14v28h-14.118v-28
-		c0-15.464,12.641-28,28.235-28s28.235,12.536,28.235,28v28h-14.118v-28"
-        />
-        <path
-          id="fill-i-1"
-          style={styles.green}
-          d="M117.574,101c0,7.732,6.321,14,14.118,14v14c-15.594,0-28.235-12.536-28.235-28v-7l0,0h14.118
-		L117.574,101"
-        />
-        <ellipse
-          id="dot-i"
-          style={styles.green}
-          cx="110.515"
-          cy="80"
-          rx="7.059"
-          ry="7"
-        />
-        <path
-          id="fill-e-1"
-          style={styles.green}
-          d="M244.632,101c0-7.732-6.321-14-14.118-14l0,0c-7.797,0-14.118,6.268-14.118,14
-		s6.321,14,14.118,14v14c-15.594,0-28.235-12.536-28.235-28s12.641-28,28.235-28s28.235,12.536,28.235,28v14h-14.118h-14.118v-14
-		H244.632"
-        />
-        <path
-          style={styles.green}
-          d="M258.25,31h-14V15h-14v16h-16v14h16c0,15.439,12.561,28,28,28V59c-7.72,0-14-6.28-14-14h14V31z"
-        />
-        <path
-          style={styles.red}
-          d="M75.25,73c-15.439,0-28-12.561-28-28h14c0,7.72,6.28,14,14,14V73z"
-        />
-        <path
-          style={styles.blue}
-          d="M173.25,73h-14V45c0-7.72-6.28-14-14-14s-14,6.28-14,14s6.28,14,14,14v14c-15.439,0-28-12.561-28-28
-				s12.561-28,28-28s28,12.561,28,28V73z"
-        />
-        <path
-          style={styles.green}
-          d="M103.25,73c-15.439,0-28-12.561-28-28s12.561-28,28-28s28,12.561,28,28v14h-28V45h14c0-7.72-6.28-14-14-14
-				s-14,6.28-14,14s6.28,14,14,14V73z"
-        />
-        <path
-          style={styles.red}
-          d="M214.25,73h-27c-15.439,0-28-12.561-28-28s12.561-28,28-28h27v14h-27c-7.72,0-14,6.28-14,14s6.28,14,14,14
-				h27V73z"
-        />
       </svg>
     );
   }
 }
 
 const styles = {
-  red: {
-    fill: '#f60051',
+  line: {
+    red: {
+      fill: 'none',
+      stroke: '#F60051',
+      strokeWidth: 14,
+      strokeMiterlimit: 10,
+    },
+    green: {
+      fill: 'none',
+      stroke: '#27F986',
+      strokeWidth: 14,
+      strokeMiterlimit: 10,
+    },
+    blue: {
+      fill: 'none',
+      stroke: '#587DF9',
+      strokeWidth: 14,
+      strokeMiterlimit: 10,
+    },
+    circle: {
+      fill: '#27F986',
+    },
   },
-  green: {
-    fill: '#27f986',
-  },
-  blue: {
-    fill: '#587df9',
+  solid: {
+    red: {
+      fill: 'none',
+      strokeWidth: 2,
+      strokePosition: 'inside',
+      strokeMiterlimit: 10,
+      stroke: '#f60051',
+    },
+    green: {
+      fill: 'none',
+      strokeWidth: 2,
+      strokePosition: 'inside',
+      strokeMiterlimit: 10,
+      stroke: '#27f986',
+    },
+    blue: {
+      fill: 'none',
+      strokeWidth: 2,
+      strokeMiterlimit: 10,
+      strokePosition: 'inside',
+      stroke: '#587df9',
+    },
   },
 };

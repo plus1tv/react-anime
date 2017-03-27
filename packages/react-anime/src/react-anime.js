@@ -30,7 +30,7 @@ class Anime extends Component {
     if (typeof this.anime === undefined)
       this.anime = anime(animeProps);
     else {
-      this.anime.remove(prevTargets);
+      //this.anime.remove(prevTargets);
       this.anime = anime(animeProps);
     }
   };

@@ -6,14 +6,19 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   context: path.join(__dirname, 'src'),
-  entry: [ './main.js' ],
+  entry: ['./main.js'],
   output: { path: path.join(__dirname, './assets'), filename: 'main.min.js' },
   resolve: {
-    extensions: [ '.js', '.jsx', '.scss', '.css' ],
-    modules: [ path.resolve(__dirname, 'src'), 'node_modules' ]
+    extensions: ['.js', '.jsx', '.scss', '.css'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    alias: {
+      react: path.resolve('./node_modules/react'),
+    },
   },
   plugins: [
-    new ExtractTextPlugin('main.min.css')/*,
+    new ExtractTextPlugin(
+      'main.min.css'
+    ) /*,
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
     new webpack.optimize.UglifyJsPlugin({
        compressor: { screw_ie8: true, warnings: false },
@@ -23,7 +28,7 @@ module.exports = {
   ],
   module: {
     rules: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: [ 'babel-loader' ] },
+      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader'] },
       {
         test: /\.s?css$/,
         loader: ExtractTextPlugin.extract({
@@ -33,26 +38,26 @@ module.exports = {
             {
               loader: 'postcss-loader',
               options: {
-                plugins: () => [ precss, autoprefixer ]
-              }
-            }
-          ]
-        })
+                plugins: () => [precss, autoprefixer],
+              },
+            },
+          ],
+        }),
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file-loader'
+        loader: 'file-loader',
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file-loader'
-      }
-    ]
+        loader: 'file-loader',
+      },
+    ],
   },
   devServer: {
     port: 3000,
     contentBase: path.join(__dirname),
     publicPath: '/assets/',
-    historyApiFallback: true
-  }
+    historyApiFallback: true,
+  },
 };
