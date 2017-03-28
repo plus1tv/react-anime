@@ -9,8 +9,7 @@
     "watch": "webpack -w src/react-anime.js dist/react-anime.js",
     "pretest": "jest -u",
     "test": "jest --coverage",
-    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
-    "prepublish": "npm run build"
+    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
@@ -32,8 +31,7 @@
     "component"
   ],
   "author": "Alain Galvan <hi@alain.xyz>",
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Alain Galvan",
       "email": "hi@alain.xyz",
       "url": " https://alain.xyz"
@@ -67,7 +65,9 @@
     "jest": "^19.0.2",
     "nyc": "^10.1.2",
     "react-test-renderer": "^15.4.2",
-    "webpack": "^2.3.2"
+    "webpack": "^2.3.2",
+    "react": "^15.x",
+    "react-dom": "^15.x"
   },
   "peerDependencies": {
     "react": "^15.x",
