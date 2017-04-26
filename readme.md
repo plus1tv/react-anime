@@ -2,6 +2,8 @@
 
 # react-anime
 
+[![Join the chat at https://gitter.im/react-anime/Lobby](https://badges.gitter.im/react-anime/Lobby.svg)](https://gitter.im/react-anime/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Npm Package][npm-img]][npm-url]
 [![License][license-img]][license-url]
 [![Unit Tests][travis-img]][travis-url]
