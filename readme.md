@@ -8,6 +8,7 @@
 [![Coverage Tests][codecov-img]][codecov-url]
 [![Dependency Status][david-img]][david-url]
 [![devDependency Status][david-dev-img]][david-dev-url]
+[![Join the chat at https://gitter.im/react-anime/Lobby](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg?style=flat-square)](https://gitter.im/react-anime/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ```bash
 npm i react-anime -S
