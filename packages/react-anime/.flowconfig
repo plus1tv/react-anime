@@ -1,0 +1,9 @@
+[ignore]
+anime.d.ts
+
+[include]
+
+[libs]
+anime.js.flow
+
+[options]

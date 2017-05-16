@@ -1,0 +1,48 @@
+{
+  "name": "react-anime-docs",
+  "version": "1.0.0",
+  "description": "Documentation website for React Anime.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hyperfuse/react-anime.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "pretest": "flow-typed install"
+  },
+  "dependencies": {
+    "file-loader": "^0.11.1",
+    "flow-typed": "^2.1.2",
+    "glamor": "^2.20.25",
+    "prismjs": "^1.6.0",
+    "randomcolor": "^0.5.2",
+    "react": "15.5.4",
+    "react-anime": "^2.0.2",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1",
+    "typeface-fira-mono": "^0.0.22",
+    "typeface-fira-sans": "^0.0.22"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "flow-bin": "^0.46.0",
+    "postcss-loader": "^2.0.5",
+    "precss": "^1.4.0",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

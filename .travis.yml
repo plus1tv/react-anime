@@ -8,12 +8,13 @@ notifications:
 node_js:
   - '7'
 before_install:
+  - cd packages/react-anime
   - npm i
 before_script:
   - npm prune
 script:
   - npm run test
-  - npm run build:publish
+  - npm run build
 after_success:
 - npm run coverage
 branches:

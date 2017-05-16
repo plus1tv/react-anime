@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "presets": [
+    "stage-2",
+    ["es2015", {
+      "loose": true,
+      "modules": false
+    }],
+    "react"
+  ],
+  "plugins": [
+    "transform-flow-strip-types",
+    "transform-class-properties",
+    "syntax-jsx"
+  ]
+}
