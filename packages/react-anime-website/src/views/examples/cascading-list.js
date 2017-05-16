@@ -18,7 +18,7 @@ export class CascadingList extends Component {
   addList = () =>
     this.setState((prev, props) => ({ list: [ ...prev.list, rcol() ] }));
 
-  popList = index =>
+  popList = index => () =>
     this.setState((prev, props) => ({
       list: prev.list.filter((v, i) => index !== i),
     }));
@@ -47,7 +47,7 @@ export class CascadingList extends Component {
                 }
               }
               key={i}
-              onClick={() => this.popList(i)}
+
             >
               {v}
             </div>

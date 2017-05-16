@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Anime single child Snapshot 1`] = `
+exports[`2 children delayed fade in 1`] = `
 <g>
   <p>
     1
