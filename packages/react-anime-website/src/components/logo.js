@@ -26,7 +26,7 @@ export class Logo extends Component {
           delay={(_, i) => 6000 + 120 * i}
           scaleX={[1.15, 1.15]}
         >
-          <div>LOGO</div>
+          <div></div>
           <div>R</div>
           <div>E</div>
           <div>A</div>
