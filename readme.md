@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://hyperfuse.github.io/react-anime"><img src="packages/react-anime-website/assets/logo.png" alt="React Anime Logo"/></a>
+  <a href="https://hyperfuse.github.io/react-anime"><img src="docs/assets/logo.png" alt="React Anime Logo"/></a>
 </p>
 
 [![Npm Package][npm-img]][npm-url]
