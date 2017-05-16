@@ -10,7 +10,7 @@ const isProduction = env && env.match(/production/);
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: ['./main.js'],
-  output: { path: path.join(__dirname, './assets/dist'), filename: 'main.min.js' },
+  output: { path: path.join(__dirname, '../../docs/assets/dist'), filename: 'main.min.js' },
   resolve: {
     extensions: ['.js', '.jsx', '.scss', '.css'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
@@ -59,7 +59,7 @@ module.exports = {
   },
   devServer: {
     port: 3000,
-    contentBase: path.join(__dirname),
+    contentBase: path.join(__dirname, '../../docs'),
     publicPath: '/assets/',
     historyApiFallback: true,
   },
