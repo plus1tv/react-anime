@@ -1,5 +1,6 @@
 # Build
 dist
+!docs/assets/dist
 build/Release
 bin
 
