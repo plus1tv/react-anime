@@ -74,6 +74,7 @@
     "react-dom": "^15.x"
   },
   "dependencies": {
-    "animejs": "^2.0.2"
+    "animejs": "^2.0.2",
+    "lodash.isequal": "^4.5.0"
   }
 }
