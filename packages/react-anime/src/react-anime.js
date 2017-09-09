@@ -59,6 +59,7 @@ export class Anime extends Component {
 
     let animeProps = { targets: this.targets, ...this.props };
 
+    anime.remove(this.targets);
     delete animeProps.children;
 
     if (typeof this.anime === undefined)
