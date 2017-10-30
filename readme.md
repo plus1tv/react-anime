@@ -43,7 +43,7 @@ const App = (props) => (
 );
 ```
 
-See more in our [API Docs](https://hyperfuse.github.io/react-anime/#/api) and [Examples](https://hyperfuse.github.io/react-anime/#/examples).
+See more in our [Examples](https://codepen.io/collection/nrkjgo/).
 
 [cover-img]: docs/assets/logo.png
 [cover-url]: https://hyperfuse.github.io/react-anime
