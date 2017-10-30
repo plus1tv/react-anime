@@ -52,13 +52,14 @@ export class Anime extends Component {
       next: !childrenWereRemoved ? difChildren : this.children.next
     };
 
-    this.createAnime();
+    this.createAnime(nextProps);
   }
 
-  createAnime = (props: AnimeProps) => {
+  createAnime = (props = this.props) => {
 
-    let animeProps = { targets: this.targets, ...this.props };
+    let animeProps = { targets: this.targets, ...props };
 
+    anime.remove(this.targets);
     delete animeProps.children;
 
     if (typeof this.anime === undefined)

@@ -1,6 +1,6 @@
 {
   "name": "react-anime",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "main": "dist/react-anime.js",
   "typings": "dist/react-anime.d.ts",
@@ -75,6 +75,7 @@
     "react-dom": "^16.x"
   },
   "dependencies": {
-    "animejs": "^2.2.0"
+    "animejs": "^2.2.0",
+    "lodash.isequal": "^4.5.0"
   }
 }
