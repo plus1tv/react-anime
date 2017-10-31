@@ -8,7 +8,6 @@
 [![Coverage Tests][codecov-img]][codecov-url]
 [![Dependency Status][david-img]][david-url]
 [![devDependency Status][david-dev-img]][david-dev-url]
-[![Join the chat at https://gitter.im/react-anime/Lobby][gitter-img]][gitter-url]
 
 ```bash
 npm i react-anime -S
@@ -60,5 +59,3 @@ See more in our [Examples](https://codepen.io/collection/nrkjgo/).
 [npm-img]: https://img.shields.io/npm/v/react-anime.svg?style=flat-square
 [npm-url]: http://npm.im/react-anime
 [npm-download-img]: https://img.shields.io/npm/dm/react-anime.svg?style=flat-square
-[gitter-img]: https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg?style=flat-square
-[gitter-url]: https://gitter.im/react-anime/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
