@@ -20,7 +20,7 @@
     "prismjs": "^1.8.3",
     "randomcolor": "^0.5.3",
     "react": "16.0.0",
-    "react-anime": "^2.0.2",
+    "react-anime": "^2.0.0",
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "typeface-fira-mono": "^0.0.43",

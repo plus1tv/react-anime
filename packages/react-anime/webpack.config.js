@@ -28,6 +28,12 @@ var config = {
       commonjs: 'animejs',
       amd: 'animejs',
     },
+    'lodash.isequal': {
+      root: 'lodash.isequal',
+      commonjs2: 'lodash.isequal',
+      commonjs: 'lodash.isequal',
+      amd: 'lodash.isequal',
+    },
   }
 };
 
