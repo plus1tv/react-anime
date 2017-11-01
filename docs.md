@@ -39,8 +39,8 @@ The following are props that you can assign to an `<Anime/>` component, along wi
 | `duration`        | `TimingValue ( above )` |
 | `autoplay`        | `boolean` |
 | `loop`            | `number | boolean` |
-| `direction`       | `'normal' | 'reverse' | 'alternate'` |
-| `easing`          | `'easeInSine' | 'easeOutSine' | 'easeInOutSine' | 'easeInCirc' | 'easeOutCirc' | 'easeInOutCirc' | 'easeInElastic' | 'easeOutElastic' | 'easeInOutElastic' | 'easeInBack' | 'easeOutBack' | 'easeInOutBack' | 'easeInBounce' | 'easeOutBounce' | 'easeInOutBounce' | 'easeInQuad' | 'easeOutQuad' | 'easeInOutQuad' | 'easeInCubic' | 'easeOutCubic' | 'easeInOutCubic' | 'easeInQuart' | 'easeOutQuart' | 'easeInOutQuart' | 'easeInQuint' | 'easeOutQuint' | 'easeInOutQuint' | 'easeInExpo' | 'easeOutExpo' | 'easeInOutExpo' | 'linear'` |
+| `direction`       | `'normal' \| 'reverse' \| 'alternate'` |
+| `easing`          | `'easeInSine' \| 'easeOutSine' \| 'easeInOutSine' \| 'easeInCirc' \| 'easeOutCirc' \| 'easeInOutCirc' \| 'easeInElastic' \| 'easeOutElastic' \| 'easeInOutElastic' \| 'easeInBack' \| 'easeOutBack' \| 'easeInOutBack' \| 'easeInBounce' \| 'easeOutBounce' \| 'easeInOutBounce' \| 'easeInQuad' \| 'easeOutQuad' \| 'easeInOutQuad' \| 'easeInCubic' \| 'easeOutCubic' \| 'easeInOutCubic' \| 'easeInQuart' \| 'easeOutQuart' \| 'easeInOutQuart' \| 'easeInQuint' \| 'easeOutQuint' \| 'easeInOutQuint' \| 'easeInExpo' \| 'easeOutExpo' \| 'easeInOutExpo' \| 'linear'` |
 |`elasticity`       | `number` |
 | `round`           | `number | boolean` |
 | `begin`           | `(anime: AnimeInstance) => void` |
