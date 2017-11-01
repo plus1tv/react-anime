@@ -1,12 +1,6 @@
-# Docs
+# Documentation
 
-react-anime was written in an effort to make animations easier to work with. We
-made this possible by wrapping the awesome flexible yet lightweight JavaScript
-animation library, [anime](https://github.com/juliangarnier/anime) in a react
-component. Simply pass some props and your awesome animations come to life.
-
-We wrote this library because [react-motion](https://github.com/chenglou/react-motion) could get really complex really really fast when animating several things and trying to coordinate
-with the animations. Also it wasn't nice to see large portions of some component code filled with callbacks. react-motion nonetheless is an awesome animation library!
+`react-anime` was written in an effort to make animations easier to work with. We made this possible by wrapping the awesome flexible yet lightweight JavaScript animation library, [anime](https://github.com/juliangarnier/anime) in a react component. Simply pass some props and your awesome animations come to life.
 
 ## Install
 
@@ -37,7 +31,7 @@ let root = (props, state) => (
 
 ## API
 
-The API is based off the [anime.js](https://github.com/juliangarnier/anime) documentation.
+The following are props that you can assign to an `<Anime/>` component, along with the type they expect.
 
 |        Prop       |      Type      |
 |:-----------------:|:---------------|
@@ -54,7 +48,7 @@ The API is based off the [anime.js](https://github.com/juliangarnier/anime) docu
 | `complete`        | `(anime: AnimeInstance) => void` |
 | `[index: string]` | `string | number | (string | number)[2] | ((el: Element, index?: number) => string | number) | { value: string | number, delay: TimingValues, duration?: TimingValues, easing?: Easing }` |
 
-**Note** the last prop type, any other props can be used by anime, from CSS attributes to SVG attributes, you name it. :)
+> **Note** the last prop type, any other props can be used by anime, from CSS attributes to SVG attributes, you name it. :)
 
 ### Transforms
 
