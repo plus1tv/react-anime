@@ -46,7 +46,7 @@ The following are props that you can assign to an `<Anime/>` component, along wi
 | `begin`           | `(anime: AnimeInstance) => void` |
 | `update`          | `(anime: AnimeInstance) => void` |
 | `complete`        | `(anime: AnimeInstance) => void` |
-| `[index: string]` | `string | number | (string | number)[2] | ((el: Element, index?: number) => string | number) | { value: string | number, delay: TimingValues, duration?: TimingValues, easing?: Easing }` |
+| `[index: string]` | `string \| number \| (string \| number)[2] \| ((el: Element, index?: number) => string | number) \| { value: string \| number, delay: TimingValues, duration?: TimingValues, easing?: Easing }` |
 
 > **Note** the last prop type, any other props can be used by anime, from CSS attributes to SVG attributes, you name it. :)
 
