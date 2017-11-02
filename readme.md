@@ -42,7 +42,7 @@ const App = (props) => (
 );
 ```
 
-Refer to the [Docs](/docs.md) to see how to use the library, or check out our [Examples](https://codepen.io/collection/nrkjgo/).
+Refer to the [Docs](/docs/readme.md) to see how to use the library, or check out our [Examples](https://codepen.io/collection/nrkjgo/).
 
 [cover-img]: docs/assets/logo.png
 [cover-url]: https://hyperfuse.github.io/react-anime
