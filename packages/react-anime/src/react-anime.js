@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import isEqual from 'lodash.isequal';
 const anime = typeof window !== 'undefined' ? require('animejs') : _ => _;
 
@@ -81,10 +81,10 @@ export class Anime extends Component {
     let { cur, prev, next } = this.children;
 
     return (
-      <g style={{ ...style }}>
+      <Fragment style={{ ...style }}>
         {cur.map((child, i) =>
           React.cloneElement(child, { key: i, ref: this.addTarget }))}
-      </g>
+      </Fragment>
     );
   }
 }
