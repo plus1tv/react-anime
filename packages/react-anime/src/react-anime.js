@@ -81,7 +81,7 @@ export class Anime extends Component {
     let { cur, prev, next } = this.children;
 
     return (
-      <Fragment style={{ ...style }}>
+      <Fragment>
         {cur.map((child, i) =>
           React.cloneElement(child, { key: i, ref: this.addTarget }))}
       </Fragment>
