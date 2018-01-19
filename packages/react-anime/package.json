@@ -1,6 +1,6 @@
 {
   "name": "react-anime",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "main": "dist/react-anime.js",
   "typings": "dist/react-anime.d.ts",
@@ -50,7 +50,7 @@
   "homepage": "https://hyperfuse.github.io/react-anime",
   "devDependencies": {
     "babel-core": "^6.26.x",
-    "babel-jest": "^21.2.x",
+    "babel-jest": "^22.1.x",
     "babel-loader": "^7.1.x",
     "babel-plugin-syntax-jsx": "^6.18.x",
     "babel-plugin-transform-class-properties": "^6.24.x",
@@ -61,11 +61,11 @@
     "babel-preset-stage-2": "^6.24.x",
     "codecov": "^3.0.x",
     "coveralls": "^3.0.x",
-    "flow-bin": "^0.58.x",
+    "flow-bin": "^0.63.x",
     "flow-typed": "^2.2.x",
-    "jest": "^21.2.x",
-    "nyc": "^11.2.x",
-    "react-test-renderer": "^16.0.x",
+    "jest": "^22.1.x",
+    "nyc": "^11.4.x",
+    "react-test-renderer": "^16.2.x",
     "webpack": "^3.8.x",
     "react": "^16.x",
     "react-dom": "^16.x"
