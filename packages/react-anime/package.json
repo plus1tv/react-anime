@@ -65,10 +65,10 @@
     "flow-typed": "^2.2.x",
     "jest": "^22.1.x",
     "nyc": "^11.4.x",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.x",
-    "webpack": "^3.8.x",
-    "react": "^16.x",
-    "react-dom": "^16.x"
+    "webpack": "^3.8.x"
   },
   "peerDependencies": {
     "react": "^16.x",
