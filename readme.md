@@ -20,10 +20,15 @@ To use it, place an `<Anime>` component and what you want to animate inside.
 ## Features
 
 - Animate nearly all CSS, SVG, & DOM attributes by adding a prop with their name (eg. `opacity`, `backgroundColor`, `translateX`).
+
 - Nested animations are as easy as putting an `<Anime>` component inside another.
+
 - Animations can react to changes in `state`.
+
 - Cascading animations through `delay` prop.
-- Easily make mounting/unmounting animations.
+
+- Easily make mounting / unmounting animations.
+
 - [TypeScript](http://typescriptlang.org/)/[Flow](https://flowtype.org/) definitions included.
 
 ## Usage
