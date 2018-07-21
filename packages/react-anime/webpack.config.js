@@ -34,7 +34,8 @@ var config = {
       commonjs: 'lodash.isequal',
       amd: 'lodash.isequal',
     },
-  }
+  },
+  mode: 'production'
 };
 
 module.exports = config;

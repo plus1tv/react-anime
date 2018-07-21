@@ -61,14 +61,15 @@
     "babel-preset-stage-2": "^6.24.x",
     "codecov": "^3.0.4",
     "coveralls": "^3.0.x",
-    "flow-bin": "^0.76.x",
+    "flow-bin": "^0.77.x",
     "flow-typed": "^2.5.x",
     "jest": "^23.4.x",
     "nyc": "^12.0.x",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-test-renderer": "^16.4.x",
-    "webpack": "^4.16.x"
+    "webpack": "^4.16.x",
+    "webpack-cli": "^3.1.0"
   },
   "peerDependencies": {
     "react": "^16.x",
