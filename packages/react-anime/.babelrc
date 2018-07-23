@@ -4,11 +4,13 @@
     "mocha": true,
     "node": true
   },
+
   "presets": [
-    "stage-2",
-    "es2015",
-    "react"
+    ["env", {
+      "modules": false
+    }]
   ],
+  
   "plugins": [
     "transform-flow-strip-types",
     "transform-class-properties",
