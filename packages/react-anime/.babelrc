@@ -1,19 +1,25 @@
 {
   "env": {
-    "browser": true,
-    "mocha": true,
-    "node": true
+    "browser": {},
+    "mocha": {},
+    "node": {}
   },
-
-  "presets": [
-    ["env", {
-      "modules": false
-    }]
+  "ignore": [
+    "third_party"
   ],
-  
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ],
+    "@babel/preset-flow"
+  ],
   "plugins": [
-    "transform-flow-strip-types",
-    "transform-class-properties",
-    "syntax-jsx"
+    "@babel/plugin-transform-flow-strip-types",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-jsx"
   ]
 }

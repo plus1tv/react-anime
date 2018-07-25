@@ -1,12 +1,33 @@
-var webpack = require('webpack');
-var env = process.env.NODE_ENV;
+const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-var config = {
-  output: { library: 'ReactAnime', libraryTarget: 'commonjs2' },
+
+module.exports = {
+  entry: {
+    app: './src/react-anime.js'
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist'])
+  ],
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist'),
+    library: 'ReactAnime',
+    libraryTarget: 'commonjs2'
+  },
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
     ],
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
   },
   node: { Buffer: false },
   externals: {
@@ -35,7 +56,4 @@ var config = {
       amd: 'lodash.isequal',
     },
   },
-  mode: 'production'
 };
-
-module.exports = config;
