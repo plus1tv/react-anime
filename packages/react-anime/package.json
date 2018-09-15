@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.prod.js && cp src/react-anime.d.ts dist/react-anime.d.ts && cp src/react-anime.js.flow dist/react-anime.js.flow",
     "pretest": "jest -u",
     "test": "jest --coverage",
-    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov"
+    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
+    "start": "npm run build"
   },
   "jest": {
     "coverageDirectory": "./coverage/",

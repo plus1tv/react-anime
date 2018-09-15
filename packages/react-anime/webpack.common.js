@@ -10,7 +10,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist'])
   ],
   output: {
-    filename: '[name].js',
+    filename: 'react-anime.js',
     path: path.resolve(__dirname, 'dist'),
     library: 'ReactAnime',
     libraryTarget: 'commonjs2'
