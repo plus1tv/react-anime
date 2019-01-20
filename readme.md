@@ -1,6 +1,4 @@
-<p align="center">
-  <h1>react-anime.js</h1>
-</p>
+![lol](docs/cover.png)
 
 [![Npm Package][npm-img]][npm-url]
 [![Npm Package][npm-download-img]][npm-url]
@@ -14,7 +12,7 @@
 npm i react-anime -S
 ```
 
-A super easy animation library for React built on top of [anime.js](https://github.com/juliangarnier/anime).
+> (ﾉ´ヮ´)ﾉ*:･ﾟ✧  A super easy animation library for React built on top of [anime.js](https://github.com/juliangarnier/anime).
 
 To use it, place an `<Anime>` component and what you want to animate inside.
 
