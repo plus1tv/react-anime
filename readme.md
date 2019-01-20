@@ -1,4 +1,6 @@
-# anime.js
+<p align="center">
+  <h1>react-anime.js</h1>
+</p>
 
 [![Npm Package][npm-img]][npm-url]
 [![License][license-img]][license-url]
@@ -24,8 +26,6 @@ To use it, place an `<Anime>` component and what you want to animate inside.
 - Animations can react to changes in `state`.
 
 - Cascading animations through `delay` prop.
-
-- Easily make mounting / unmounting animations.
 
 - [TypeScript](http://typescriptlang.org/)/[Flow](https://flowtype.org/) definitions included.
 
