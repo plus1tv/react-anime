@@ -1,4 +1,4 @@
-![lol](docs/cover.png)
+<h1 align="center">*✧ﾟreact-anime ﾟ✧*</h1>
 
 [![Npm Package][npm-img]][npm-url]
 [![Npm Package][npm-download-img]][npm-url]
