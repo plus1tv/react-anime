@@ -1,11 +1,90 @@
 {
-  "name": "react-anime-monorepo",
-  "version": "2.1.0",
-  "scripts": {
-    "start": "npm i",
-    "postinstall": "lerna bootstrap"
-  },
-  "dependencies": {
-    "lerna": "2.11.0"
-  }
+    "name": "react-anime",
+    "version": "2.3.0",
+    "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
+    "main": "dist/react-anime.js",
+    "typings": "dist/react-anime.d.ts",
+    "scripts": {
+        "build": "webpack --config webpack.prod.js && cp src/react-anime.d.ts dist/react-anime.d.ts && cp src/react-anime.js.flow dist/react-anime.js.flow",
+        "pretest": "jest -u",
+        "test": "jest --coverage",
+        "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
+        "start": "npm run build"
+    },
+    "jest": {
+        "coverageDirectory": "./coverage/",
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "src/**/*.js"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/hyperfuse/react-anime.git"
+    },
+    "keywords": [
+        "animation",
+        "animate",
+        "anime",
+        "react",
+        "motion",
+        "css",
+        "transition",
+        "tween",
+        "component"
+    ],
+    "author": "Alain Galvan <hi@alain.xyz>",
+    "contributors": [
+        {
+            "name": "Alain Galvan",
+            "email": "hi@alain.xyz",
+            "url": "https://alain.xyz"
+        },
+        {
+            "name": "Kennet Postigo",
+            "email": "kennetfpostigo@gmail.com",
+            "url": "http://kpostigo.com"
+        }
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hyperfuse/react-anime/issues"
+    },
+    "homepage": "https://hyperfuse.github.io/react-anime",
+    "devDependencies": {
+        "@babel/core": "7.2.2",
+        "@babel/plugin-proposal-class-properties": "7.2.3",
+        "@babel/plugin-syntax-jsx": "7.2.0",
+        "@babel/plugin-transform-flow-strip-types": "7.2.3",
+        "@babel/polyfill": "7.2.5",
+        "@babel/preset-env": "7.2.3",
+        "@babel/preset-flow": "7.0.0",
+        "@babel/preset-react": "7.0.0",
+        "@babel/register": "^7.0.0",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^23.6.x",
+        "babel-loader": "^8.0.5",
+        "clean-webpack-plugin": "^1.0.x",
+        "codecov": "^3.1.x",
+        "coveralls": "^3.0.x",
+        "flow-bin": "^0.91.x",
+        "flow-typed": "^2.5.x",
+        "jest": "^23.6.x",
+        "nyc": "^13.1.x",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.x",
+        "react-test-renderer": "^16.7.x",
+        "uglifyjs-webpack-plugin": "^2.1.x",
+        "webpack": "^4.29.x",
+        "webpack-command": "^0.4.x",
+        "webpack-merge": "^4.2.x"
+    },
+    "peerDependencies": {
+        "react": "^16.x",
+        "react-dom": "^16.x"
+    },
+    "dependencies": {
+        "animejs": "^3.0.1",
+        "lodash.isequal": "^4.5.0"
+    }
 }

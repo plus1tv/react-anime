@@ -38,13 +38,13 @@ it('2 children delayed fade in', () => {
       duration={1000}
       direction="alternate"
       loop={true}
-      delay={(el, index) => index * 240}
+      delay={(_, index) => index * 240}
     >
       <p>1</p>
       <p>2</p>
     </Anime>,
     {
-      createNodeMock: element => ({ nodeType: true }),
+      createNodeMock: _ => ({ nodeType: true }),
     },
   );
 

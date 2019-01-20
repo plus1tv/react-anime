@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="https://hyperfuse.github.io/react-anime"><img src="docs/assets/logo.png" alt="React Anime Logo"/></a>
-</p>
+# anime.js
 
 [![Npm Package][npm-img]][npm-url]
 [![License][license-img]][license-url]
