@@ -3,6 +3,7 @@
 </p>
 
 [![Npm Package][npm-img]][npm-url]
+[![Npm Package][npm-download-img]][npm-url]
 [![License][license-img]][license-url]
 [![Unit Tests][travis-img]][travis-url]
 [![Coverage Tests][codecov-img]][codecov-url]
@@ -51,10 +52,10 @@ Refer to the [Docs](/docs/readme.md) to see how to use the library, or check out
 [cover-url]: https://hyperfuse.github.io/react-anime
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
-[david-url]: https://david-dm.org/hyperfuse/react-anime?path=packages/react-anime
-[david-img]: https://david-dm.org/hyperfuse/react-anime.svg?path=packages/react-anime&style=flat-square
-[david-dev-url]: https://david-dm.org/hyperfuse/react-anime?path=packages/react-anime#info=devDependencies
-[david-dev-img]: https://david-dm.org/hyperfuse/react-anime/dev-status.svg?path=packages/react-anime&style=flat-square
+[david-url]: https://david-dm.org/hyperfuse/react-anime
+[david-img]: https://david-dm.org/hyperfuse/react-anime.svg?style=flat-square
+[david-dev-url]: https://david-dm.org/hyperfuse/react-anime#info=devDependencies
+[david-dev-img]: https://david-dm.org/hyperfuse/react-anime/dev-status.svg?style=flat-square
 [travis-img]: https://img.shields.io/travis/hyperfuse/react-anime.svg?style=flat-square
 [travis-url]:https://travis-ci.org/hyperfuse/react-anime
 [codecov-img]:https://img.shields.io/codecov/c/github/hyperfuse/react-anime.svg?style=flat-square
