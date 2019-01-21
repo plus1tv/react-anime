@@ -13,7 +13,7 @@
 > Just place an `<Anime>` component and what you want animated inside.
 
 
-[Documentation](/docs/readme.md) | [Demos](https://codepen.io/collection/nrkjgo/) | [Anime.js](https://github.com/juliangarnier/anime)
+[Documentation](documentation.md) | [Demos](https://codepen.io/collection/nrkjgo/) | [Anime.js](https://github.com/juliangarnier/anime)
 
 </div>
 
