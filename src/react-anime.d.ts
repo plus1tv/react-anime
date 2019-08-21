@@ -81,6 +81,7 @@ export type AnimeProps = {
     [prop: string]: any;
 };
 
-declare class Anime extends React.Component<AnimeProps, any> {}
-
+declare class Anime extends React.Component<AnimeProps, any> {
+  anime:any;
+}
 export default Anime;
