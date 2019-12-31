@@ -1,6 +1,6 @@
 {
     "name": "react-anime",
-    "version": "2.3.1",
+    "version": "2.3.2",
     "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
     "main": "dist/react-anime.js",
     "typings": "dist/react-anime.d.ts",
@@ -50,7 +50,7 @@
     "bugs": {
         "url": "https://github.com/hyperfuse/react-anime/issues"
     },
-    "homepage": "https://hyperfuse.github.io/react-anime",
+    "homepage": "https://alain.xyz/libraries/react-anime",
     "devDependencies": {
         "@babel/core": "7.7.7",
         "@babel/plugin-proposal-class-properties": "7.7.4",
