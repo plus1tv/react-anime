@@ -23,7 +23,6 @@
 npm i react-anime -S
 ```
 
-
 ## Features
 
 - Animate nearly all CSS, SVG, & DOM attributes by adding a prop with their name (eg. `opacity`, `backgroundColor`, `translateX`).

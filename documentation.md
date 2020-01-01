@@ -35,6 +35,7 @@ The following are props that you can assign to an `<Anime/>` component, along wi
 
 |        Prop       |      Type      |
 |:-----------------:|:---------------|
+| `svg`             | `boolean` |
 | `delay`           | `(el: Element, index?: number, len?: number) => number \| number` |
 | `duration`        | `TimingValue ( above )` |
 | `autoplay`        | `boolean` |

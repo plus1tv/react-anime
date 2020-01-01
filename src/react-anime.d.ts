@@ -56,6 +56,7 @@ export type AnimeProps = {
     easing?: Easing;
     elasticity?: number;
     round?: number | boolean;
+    svg?: boolean;
     begin?: Function;
     update?: Function;
     complete?: Function;

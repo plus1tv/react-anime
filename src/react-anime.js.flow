@@ -55,6 +55,7 @@ export type AnimeProps = {
     direction?: 'normal' | 'reverse' | 'alternate';
     easing?: Easing;
     elasticity?: number;
+    svg?: boolean;
     round?: number | boolean;
     begin?: Function;
     update?: Function;

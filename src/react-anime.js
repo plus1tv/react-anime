@@ -46,6 +46,7 @@ export class Anime extends Component {
 
         let animeProps = { ...props, targets: this.targets };
         delete animeProps.children;
+        delete animeProps.svg;
         this.anime = anime(animeProps);
     };
 
@@ -58,10 +59,11 @@ export class Anime extends Component {
             <Fragment>
                 {children.map((child, i) => {
                     refs.push(React.createRef());
+                    let El = this.props.svg ? 'g' : 'div';
                     return (
-                        <div ref={refs[refs.length - 1]} key={`${PREFIX}${i}`}>
+                        <El ref={refs[refs.length - 1]} key={`${PREFIX}${i}`}>
                             {child}
-                        </div>
+                        </El>
                     );
                 })}
             </Fragment>
