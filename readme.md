@@ -40,10 +40,10 @@ npm i react-anime -S
 
 ```js
 import React from 'react';
-import Anime from 'react-anime';
+import Anime, {anime} from 'react-anime';
 
 const App = (props) => (
-  <Anime delay={(e, i) => i * 100}
+  <Anime delay={anime.stagger(100)}
          scale={[.1, .9]}>
     <div className="blue"/>
     <div className="green"/>

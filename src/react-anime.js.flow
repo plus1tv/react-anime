@@ -1,4 +1,5 @@
 import * as React from 'react';
+import anime from 'animejs';
 
 export type Easing =
     | 'easeInSine'
@@ -84,3 +85,4 @@ export type AnimeProps = {
 declare class Anime extends React.Component<AnimeProps, any> {}
 
 export default Anime;
+export { anime };
