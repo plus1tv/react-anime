@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from 'react';
 const anime = typeof window !== 'undefined' ? require('animejs').default : (_) => _;
+const PREFIX = '__anime__';
 
 export class Anime extends Component {
     props: AnimeProps;
@@ -51,7 +52,7 @@ export class Anime extends Component {
                 {children.map((child, i) => {
                     refs.push(React.createRef());
                     return (
-                        <div ref={refs[refs.length - 1]} key={i}>
+                        <div ref={refs[refs.length - 1]} key={`${PREFIX}${i}`}>
                             {child}
                         </div>
                     );
