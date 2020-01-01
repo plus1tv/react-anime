@@ -44,7 +44,7 @@ it('2 children delayed fade in', () => {
       <p>2</p>
     </Anime>,
     {
-      createNodeMock: _ => ({ nodeType: true }),
+      createNodeMock: _ => ({ nodeType: false }),
     },
   );
 

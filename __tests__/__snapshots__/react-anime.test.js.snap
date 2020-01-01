@@ -2,11 +2,15 @@
 
 exports[`2 children delayed fade in 1`] = `
 Array [
-  <p>
-    1
-  </p>,
-  <p>
-    2
-  </p>,
+  <div>
+    <p>
+      1
+    </p>
+  </div>,
+  <div>
+    <p>
+      2
+    </p>
+  </div>,
 ]
 `;

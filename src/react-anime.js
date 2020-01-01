@@ -1,5 +1,10 @@
 import React, { Fragment, Component } from 'react';
-const anime = typeof window !== 'undefined' ? require('animejs').default : (_) => _;
+let anime = (_) => _;
+if (typeof window !== 'undefined') {
+    const animejs = require('animejs');
+    anime = typeof animejs === 'object' ? animejs.default : animejs;
+}
+
 const PREFIX = '__anime__';
 
 export class Anime extends Component {
@@ -7,6 +12,7 @@ export class Anime extends Component {
 
     targets: any[];
     targetRefs: any[];
+    anime: any;
 
     constructor(props: AnimeProps) {
         super(props);
@@ -25,7 +31,8 @@ export class Anime extends Component {
         this.createAnime();
     }
 
-    createAnime = (props = this.props) => {
+    createAnime = () => {
+        let props = this.props;
         if (this.targets.length > 0 && this.anime !== undefined) {
             anime.remove(this.targets);
         }
@@ -37,7 +44,7 @@ export class Anime extends Component {
             }
         }
 
-        let animeProps = { targets: this.targets, ...props };
+        let animeProps = { ...props, targets: this.targets };
         delete animeProps.children;
         this.anime = anime(animeProps);
     };
