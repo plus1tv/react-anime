@@ -1,90 +1,99 @@
 {
-    "name": "react-anime",
-    "version": "3.0.3",
-    "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
-    "main": "dist/react-anime.js",
-    "typings": "dist/react-anime.d.ts",
-    "scripts": {
-        "build": "webpack --config webpack.prod.js && cp src/react-anime.d.ts dist/react-anime.d.ts && cp src/react-anime.js.flow dist/react-anime.js.flow",
-        "pretest": "jest -u",
-        "test": "jest --coverage",
-        "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
-        "start": "npm run build"
+  "name": "react-anime",
+  "version": "3.0.3",
+  "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
+  "typings": "dist/react-anime.d.ts",
+  "types": "dist/react-anime.d.ts",
+  "source": "src/react-anime.ts",
+  "main": "dist/react-anime.js",
+  "module": "dist/react-anime.module.js",
+  "unpkg": "dist/react-anime.umd.js",
+  "scripts": {
+    "pretest": "jest -u",
+    "test": "jest --coverage",
+    "tsc": "tsc",
+    "lint": "eslint ./src/**/*.ts",
+    "prettier": "prettier --config .prettierrc.js --write \"src/**/*.{ts,tsx,js,json}\"",
+    "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
+    "build": "microbundle src/react-anime.tsx -f cjs,es,modern,umd --target web ---jsx React.createElement --compress",
+    "dev": "microbundle watch"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hyperfuse/react-anime.git"
+  },
+  "keywords": [
+    "animation",
+    "animate",
+    "anime",
+    "react",
+    "motion",
+    "css",
+    "transition",
+    "tween",
+    "component"
+  ],
+  "author": "Alain Galvan <hi@alain.xyz>",
+  "contributors": [
+    {
+      "name": "Alain Galvan",
+      "email": "hi@alain.xyz",
+      "url": "https://alain.xyz"
     },
-    "jest": {
-        "coverageDirectory": "./coverage/",
-        "collectCoverage": true,
-        "collectCoverageFrom": [
-            "src/**/*.js"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/hyperfuse/react-anime.git"
-    },
-    "keywords": [
-        "animation",
-        "animate",
-        "anime",
-        "react",
-        "motion",
-        "css",
-        "transition",
-        "tween",
-        "component"
-    ],
-    "author": "Alain Galvan <hi@alain.xyz>",
-    "contributors": [
-        {
-            "name": "Alain Galvan",
-            "email": "hi@alain.xyz",
-            "url": "https://alain.xyz"
-        },
-        {
-            "name": "Kennet Postigo",
-            "email": "kennetfpostigo@gmail.com",
-            "url": "http://kpostigo.com"
-        }
-    ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/hyperfuse/react-anime/issues"
-    },
-    "homepage": "https://alain.xyz/libraries/react-anime",
-    "devDependencies": {
-        "@babel/core": "7.7.7",
-        "@babel/plugin-proposal-class-properties": "7.7.4",
-        "@babel/plugin-syntax-jsx": "7.7.4",
-        "@babel/plugin-transform-flow-strip-types": "7.7.4",
-        "@babel/polyfill": "7.7.0",
-        "@babel/preset-env": "7.7.7",
-        "@babel/preset-flow": "7.7.4",
-        "@babel/preset-react": "7.7.4",
-        "@babel/register": "^7.7.7",
-        "babel-core": "^7.0.0-bridge.0",
-        "babel-jest": "^24.9.x",
-        "babel-loader": "^8.0.6",
-        "clean-webpack-plugin": "^3.0.x",
-        "codecov": "^3.6.x",
-        "coveralls": "^3.0.x",
-        "flow-bin": "^0.114.x",
-        "flow-typed": "^2.6.x",
-        "jest": "^24.9.x",
-        "nyc": "^15.0.x",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.x",
-        "react-test-renderer": "^16.12.x",
-        "uglifyjs-webpack-plugin": "^2.2.x",
-        "webpack": "^4.41.x",
-        "webpack-command": "^0.5.x",
-        "webpack-merge": "^4.2.x"
-    },
-    "peerDependencies": {
-        "react": "^16.x",
-        "react-dom": "^16.x"
-    },
-    "dependencies": {
-        "animejs": "^3.1.0",
-        "lodash.isequal": "^4.5.0"
+    {
+      "name": "Kennet Postigo",
+      "email": "kennetfpostigo@gmail.com",
+      "url": "http://kpostigo.com"
     }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyperfuse/react-anime/issues"
+  },
+  "homepage": "https://alain.xyz/libraries/react-anime",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run tsc && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.0",
+    "@types/react": "^16.9.34",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "codecov": "^3.6.x",
+    "coveralls": "^3.0.x",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "jest": "^24.9.x",
+    "lint-staged": "^10.1.7",
+    "microbundle": "next",
+    "nyc": "^15.0.x",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  },
+  "dependencies": {
+    "animejs": "^3.1.0"
+  }
 }
