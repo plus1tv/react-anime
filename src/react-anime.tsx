@@ -1,4 +1,5 @@
-import React, { useRef, useCallback, useEffect } from 'react';
+// eslint-disable-next-line
+import React, { Fragment, useRef, useCallback, useEffect } from 'react';
 import animejs, { AnimeInstance } from 'animejs';
 import { AnimeProps } from './types';
 
@@ -31,7 +32,7 @@ export default function Anime(props: AnimeProps) {
   const refs = targetRefs.current;
   if (!Array.isArray(props.children)) props.children = [props.children];
   return (
-    <>
+    <Fragment>
       {
         // @ts-ignore
         props.children.map((child: any, i: number) => {
@@ -45,6 +46,6 @@ export default function Anime(props: AnimeProps) {
           );
         })
       }
-    </>
+    </Fragment>
   );
 }

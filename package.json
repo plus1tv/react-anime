@@ -15,7 +15,7 @@
     "lint": "eslint ./src/**/*.ts",
     "prettier": "prettier --config .prettierrc.js --write \"src/**/*.{ts,tsx,js,json}\"",
     "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
-    "build": "microbundle src/react-anime.tsx -f cjs,es,modern,umd --target web ---jsx React.createElement --compress",
+    "build": "microbundle src/react-anime.tsx -f cjs,es,modern,umd --target web --jsx React.createElement --compress",
     "dev": "microbundle watch"
   },
   "jest": {
