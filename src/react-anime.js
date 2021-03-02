@@ -27,10 +27,6 @@ export class Anime extends Component {
         this.createAnime();
     }
 
-    componentDidUpdate() {
-        this.createAnime();
-    }
-
     createAnime = () => {
         let props = this.props;
         if (this.targets.length > 0 && this.anime !== undefined) {
