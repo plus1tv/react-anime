@@ -60,7 +60,7 @@
   "homepage": "https://alain.xyz/libraries/react-anime",
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run tsc && lint-staged"
+      "pre-commit": "npm run tsc && lint-staged"
     }
   },
   "lint-staged": {
@@ -70,30 +70,29 @@
     ]
   },
   "devDependencies": {
-    "@types/animejs": "^3.1.0",
-    "@types/react": "^16.9.34",
-    "@types/react-test-renderer": "^16.9.2",
-    "@typescript-eslint/eslint-plugin": "^2.28.0",
-    "@typescript-eslint/parser": "^2.28.0",
-    "codecov": "^3.6.x",
-    "coveralls": "^3.0.x",
-    "eslint": "^6.8.0",
-    "husky": "^4.2.5",
-    "jest": "^24.9.x",
-    "lint-staged": "^10.1.7",
+    "@types/animejs": "^3.1.x",
+    "@types/react": "^17.0.x",
+    "@types/react-test-renderer": "^17.0.x",
+    "@typescript-eslint/eslint-plugin": "^4.16.x",
+    "@typescript-eslint/parser": "^4.16.x",
+    "codecov": "^3.8.x",
+    "coveralls": "^3.1.x",
+    "eslint": "^7.21.x",
+    "jest": "^26.6.x",
+    "lint-staged": "^10.5.x",
     "microbundle": "next",
-    "nyc": "^15.0.x",
-    "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-test-renderer": "^16.13.1",
-    "typescript": "^3.8.3"
+    "nyc": "^15.1.x",
+    "prettier": "^2.2.x",
+    "react": "^16.13.x",
+    "react-dom": "^16.13.x",
+    "react-test-renderer": "^17.0.x",
+    "typescript": "^4.2.x"
   },
   "peerDependencies": {
-    "react": "^16.x",
-    "react-dom": "^16.x"
+    "react": "^17.x",
+    "react-dom": "^17.x"
   },
   "dependencies": {
-    "animejs": "^3.1.0"
+    "animejs": "^3.2.x"
   }
 }
