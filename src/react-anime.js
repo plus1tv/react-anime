@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { useEffect } from 'react';
 let anime = (_) => _;
 if (typeof window !== 'undefined') {
     const animejs = require('animejs');
@@ -7,64 +7,52 @@ if (typeof window !== 'undefined') {
 
 const PREFIX = '__anime__';
 
-export class Anime extends Component {
-    props: AnimeProps;
+const Anime = (props: AnimeProps) => {
+    const targets: any[] = [];
+    const targetRefs: any[] = [];
+    const anime: any = null;
 
-    targets: any[];
-    targetRefs: any[];
-    anime: any;
-
-    constructor(props: AnimeProps) {
-        super(props);
-
-        // Current Anime DOM Targets
-        this.targets = [];
-        this.targetRefs = [];
-        this.anime = null;
-    }
-
-    componentDidMount() {
-        this.createAnime();
-    }
-
-    createAnime = () => {
-        let props = this.props;
-        if (this.targets.length > 0 && this.anime !== undefined) {
-            anime.remove(this.targets);
+    const createAnime = () => {
+        if (targets.length > 0 && anime !== undefined) {
+            anime.remove(targets);
         }
 
-        this.targets = [];
-        for (let ref of this.targetRefs) {
+        targets = [];
+        for (let ref of targetRefs) {
             if (ref.current) {
-                this.targets.push(ref.current);
+                targets.push(ref.current);
             }
         }
 
-        let animeProps = { ...props, targets: this.targets };
+        let animeProps = { ...props, targets };
         delete animeProps.children;
         delete animeProps.svg;
-        this.anime = anime(animeProps);
-    };
-
-    // Render children, and their diffs until promise of anime finishes.
-    render() {
-        let children = this.props.children;
-        let refs = this.targetRefs;
-        if (!Array.isArray(children)) children = [ children ];
-        return (
-            <Fragment>
-                {children.map((child, i) => {
-                    refs.push(React.createRef());
-                    let El = this.props.svg ? 'g' : 'div';
-                    return (
-                        <El ref={refs[refs.length - 1]} key={`${PREFIX}${i}`}>
-                            {child}
-                        </El>
-                    );
-                })}
-            </Fragment>
-        );
+        anime = anime(animeProps);
     }
+
+    useEffect(() => {
+        createAnime();
+    }, []);
+
+    let children = props.children;
+    let refs = targetRefs;
+    if (!Array.isArray(children)) {
+        children = [ children ];
+    }
+
+    return (
+        <>
+            {children.map((child, i) => {
+                refs.push(React.createRef());
+                let El = props.svg ? 'g' : 'div';
+                return (
+                    <El ref={refs[refs.length - 1]} key={`${PREFIX}${i}`}>
+                        {child}
+                    </El>
+                );
+            })}
+        </>
+    );
 }
 
 export default Anime;
