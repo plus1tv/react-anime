@@ -83,14 +83,12 @@
     "microbundle": "next",
     "nyc": "^15.1.x",
     "prettier": "^2.2.x",
-    "react": "^16.13.x",
-    "react-dom": "^16.13.x",
     "react-test-renderer": "^17.0.x",
     "typescript": "^4.2.x"
   },
   "peerDependencies": {
-    "react": "^17.x",
-    "react-dom": "^17.x"
+    "react": "^16.x || 17.x",
+    "react-dom": "^16.x || 17.x"
   },
   "dependencies": {
     "animejs": "^3.2.x"
