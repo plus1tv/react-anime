@@ -70,6 +70,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/animejs": "^3.1.x",
     "@types/react": "^17.0.x",
     "@types/react-test-renderer": "^17.0.x",

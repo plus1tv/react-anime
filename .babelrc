@@ -1,0 +1,21 @@
+{
+    "env": {
+      "browser": {},
+      "mocha": {},
+      "node": {}
+    },
+    "ignore": [
+      "third_party"
+    ],
+    "presets": [
+      "@babel/preset-react",
+      [
+        "@babel/preset-env",
+        {
+          "modules": "commonjs"
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  }
+  
