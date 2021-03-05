@@ -1,27 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es2019",
+    "target": "es2015",
+    "lib": [
+      "dom",
+      "es5",
+      "es2015",
+      "es2016",
+      "es2017"
+    ],
     "module": "ES6",
-    "allowJs": true,
-    "noEmit": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
+    "declaration": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": false,
+    "sourceMap": false,
+    "strictNullChecks": false,
     "jsx": "react",
-    "lib": ["es6"],
-    "moduleResolution": "node",
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
-    "paths": {},
-    "resolveJsonModule": true
+    "allowSyntheticDefaultImports": true
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*"]
+  "compileOnSave": false,
+  "buildOnSave": false
 }

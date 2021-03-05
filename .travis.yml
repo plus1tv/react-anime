@@ -11,6 +11,7 @@ before_install:
   - npm i
 before_script:
   - npm prune
+  - rm dist -rf
 script:
   - npm run build
   - npm run test

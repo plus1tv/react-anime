@@ -3,7 +3,7 @@ coverage
 documentation.md
 assets
 src
-
+*.map
 .babelrc
 .eslintrc
 .flowconfig
