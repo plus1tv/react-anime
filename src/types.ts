@@ -1,6 +1,3 @@
-import * as React from 'react';
-import anime from 'animejs';
-
 export type Easing =
   | 'easeInSine'
   | 'easeOutSine'
@@ -84,10 +81,3 @@ export type AnimeProps = {
   // Custom Props
   [prop: string]: any;
 };
-
-declare class Anime extends React.Component<AnimeProps, any> {
-  anime: anime.AnimeInstance;
-}
-
-export default Anime;
-export { anime };
