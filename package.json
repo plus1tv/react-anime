@@ -86,6 +86,8 @@
     "microbundle": "next",
     "nyc": "^15.1.x",
     "prettier": "^2.2.x",
+    "react": "17.x",
+    "react-dom": "17.x",
     "react-test-renderer": "^17.0.x",
     "typescript": "^4.2.x"
   },

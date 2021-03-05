@@ -55,13 +55,13 @@ const App = (props) => (
 
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
-[david-url]: https://david-dm.org/hyperfuse/react-anime
-[david-img]: https://david-dm.org/hyperfuse/react-anime.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/hyperfuse/react-anime#info=devDependencies
-[david-dev-img]: https://david-dm.org/hyperfuse/react-anime/dev-status.svg?style=flat-square
-[travis-img]: https://img.shields.io/travis/hyperfuse/react-anime.svg?style=flat-square
-[travis-url]:https://travis-ci.org/hyperfuse/react-anime
-[codecov-img]:https://img.shields.io/codecov/c/github/hyperfuse/react-anime.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/hyperfuse/react-anime
+[david-url]: https://david-dm.org/plus1tv/react-anime
+[david-img]: https://david-dm.org/plus1tv/react-anime.svg?style=flat-square
+[david-dev-url]: https://david-dm.org/plus1tv/react-anime#info=devDependencies
+[david-dev-img]: https://david-dm.org/plus1tv/react-anime/dev-status.svg?style=flat-square
+[travis-img]: https://img.shields.io/travis/plus1tv/react-anime.svg?style=flat-square
+[travis-url]:https://travis-ci.com/plus1tv/react-anime
+[codecov-img]:https://img.shields.io/codecov/c/github/plus1tv/react-anime.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/plus1tv/react-anime
 [npm-img]: https://img.shields.io/npm/v/react-anime.svg?style=flat-square
 [npm-url]: http://npm.im/react-anime
