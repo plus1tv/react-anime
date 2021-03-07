@@ -29,29 +29,27 @@ npm i react-anime -S
 
 - Nested animations are as easy as putting an `<Anime>` component inside another.
 
-- Animations can react to changes in `state`.
-
 - Cascading animations through `delay` prop.
 
-- [TypeScript](http://typescriptlang.org/)/[Flow](https://flowtype.org/) definitions included.
+- Add elements dynamically and have them animate in.
+
+- [TypeScript](http://typescriptlang.org/) definitions included.
 
 ## Usage
 
 ```js
 import React from 'react';
-import Anime, {anime} from 'react-anime';
+import Anime, { anime } from 'react-anime';
 
-const App = (props) => (
-  <Anime delay={anime.stagger(100)}
-         scale={[.1, .9]}>
-    <div className="blue"/>
-    <div className="green"/>
-    <div className="red"/>
-  </Anime>
+let colors = [ 'blue', 'green', 'red' ];
+
+const MyAnime = (props) => (
+    <Anime delay={anime.stagger(100)} scale={[ 0.1, 0.9 ]}>
+        {colors.map((color, i) => <div key={i} className={color} />)}
+    </Anime>
 );
+
 ```
-
-
 
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
@@ -59,9 +57,9 @@ const App = (props) => (
 [david-img]: https://david-dm.org/plus1tv/react-anime.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/plus1tv/react-anime#info=devDependencies
 [david-dev-img]: https://david-dm.org/plus1tv/react-anime/dev-status.svg?style=flat-square
-[travis-img]: https://img.shields.io/travis/plus1tv/react-anime.svg?style=flat-square
-[travis-url]:https://travis-ci.com/plus1tv/react-anime
-[codecov-img]:https://img.shields.io/codecov/c/github/plus1tv/react-anime.svg?style=flat-square
+[travis-img]: https://img.shields.io/travis/com/plus1tv/react-anime?style=flat-square
+[travis-url]: https://www.travis-ci.com/github/plus1tv/react-anime
+[codecov-img]: https://img.shields.io/codecov/c/github/plus1tv/react-anime.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/plus1tv/react-anime
 [npm-img]: https://img.shields.io/npm/v/react-anime.svg?style=flat-square
 [npm-url]: http://npm.im/react-anime
