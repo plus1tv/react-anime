@@ -1,6 +1,6 @@
 {
   "name": "react-anime",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "(ﾉ´ヮ´)ﾉ*:･ﾟ✧ A super easy animation library for React.",
   "typings": "dist/react-anime.d.ts",
   "types": "dist/react-anime.d.ts",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/hyperfuse/react-anime.git"
+    "url": "git+ssh://git@github.com/plus1tv/react-anime.git"
   },
   "keywords": [
     "animation",
@@ -57,7 +57,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hyperfuse/react-anime/issues"
+    "url": "https://github.com/plus1tv/react-anime/issues"
   },
   "homepage": "https://alain.xyz/libraries/react-anime",
   "husky": {
