@@ -12,7 +12,6 @@
 > (ﾉ´ヮ´)ﾉ*:･ﾟ✧  A super easy animation library for React built on top of Julian Garnier's [anime.js](https://github.com/juliangarnier/anime). <br>
 > Just place an `<Anime>` component and what you want animated inside.
 
-
 [Documentation](documentation.md) | [Demos](https://codepen.io/collection/nrkjgo/) | [Anime.js](https://github.com/juliangarnier/anime)
 
 </div>

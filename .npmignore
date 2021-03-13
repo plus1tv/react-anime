@@ -13,3 +13,5 @@ webpack.*.js
 .vscode
 example
 license.md
+dist/flatten.d.ts
+dist/*.map
