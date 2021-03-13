@@ -91,7 +91,7 @@ export default function Anime(props: AnimeProps) {
     const targets = useRef<any[]>([]);
     const targetRefs = useRef<any[]>([]);
     const anime = useRef<AnimeInstance | null>(null);
-    const completed = useRef<any | null>(new Set<any>());
+    const completed = useRef<Set<any> | null>(new Set<any>());
 
     const createAnime = useCallback(
         () => {
@@ -99,7 +99,7 @@ export default function Anime(props: AnimeProps) {
 
             targets.current = [];
             for (let ref of targetRefs.current) {
-                if (ref.current) targets.current.push(ref.current);
+                if (ref.current && !completed.current.has(ref.current)) targets.current.push(ref.current);
             }
 
             const animeProps: any = {

@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
-import renderer from 'react-test-renderer';
+import React, { useEffect, useState } from 'react';
+import renderer, { act } from 'react-test-renderer';
 import Anime from '../src/react-anime';
 
 function App(props) {
     let [ state, setState ] = useState({ myList: [ 'First Entry' ] });
+
     return (
         <div>
             <a
@@ -38,12 +39,14 @@ function App(props) {
 
 //snapshot test
 it('dynamic list', () => {
-    const tree = renderer.create(
-      <App/>,
-      {
-        createNodeMock: _ => ({ nodeType: false })
-      }
-    );
-  
-    expect(tree.toJSON()).toMatchSnapshot();
-  });
+    let renderConfig = {
+        createNodeMock: (_) => ({ nodeType: false })
+    };
+    let node = <App />;
+
+    // Effect test
+    act(() => {
+        const tree = renderer.create(node, renderConfig);
+        expect(tree.toJSON()).toMatchSnapshot();
+    });
+});
