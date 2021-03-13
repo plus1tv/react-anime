@@ -24,7 +24,7 @@
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.ts"
+      "src/react-anime.tsx"
     ],
     "testMatch": [
       "**/tests/**/*.[jt]s?(x)",
