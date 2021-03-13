@@ -25,6 +25,10 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.ts"
+    ],
+    "testMatch": [
+      "**/tests/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[tj]s?(x)"
     ]
   },
   "repository": {
@@ -72,18 +76,18 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.13.9",
-    "@babel/preset-react": "^7.12.13",
-    "@babel/preset-typescript": "^7.13.0",
+    "@babel/preset-env": "^7.13.x",
+    "@babel/preset-react": "^7.12.x",
+    "@babel/preset-typescript": "^7.13.x",
     "@types/animejs": "^3.1.2",
     "@types/jest": "^26.0.20",
-    "@types/react": "^17.0.2",
+    "@types/react": "^17.0.3",
     "@types/react-test-renderer": "^17.0.x",
-    "@typescript-eslint/eslint-plugin": "^4.16.x",
-    "@typescript-eslint/parser": "^4.16.x",
+    "@typescript-eslint/eslint-plugin": "^4.17.x",
+    "@typescript-eslint/parser": "^4.17.x",
     "codecov": "^3.8.x",
     "coveralls": "^3.1.x",
-    "eslint": "^7.21.x",
+    "eslint": "^7.22.x",
     "jest": "^26.6.x",
     "lint-staged": "^10.5.x",
     "microbundle": "^0.13.x",
@@ -95,8 +99,8 @@
     "typescript": "^4.2.x"
   },
   "peerDependencies": {
-    "react": "^16.x || 17.x",
-    "react-dom": "^16.x || 17.x"
+    "react": "^16.x || ^17.x",
+    "react-dom": "^16.x || ^17.x"
   },
   "dependencies": {
     "animejs": "^3.2.x"

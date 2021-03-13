@@ -1,6 +1,7 @@
 // eslint-disable-next-line
-import React, { Fragment, useRef, useCallback, useEffect } from 'react';
+import React, { Fragment, useRef, useCallback, useEffect, ReactNodeArray } from 'react';
 import animejs, { AnimeInstance } from 'animejs';
+import {flatten} from './flatten';
 
 export type Easing =
     | 'easeInSine'
@@ -109,7 +110,7 @@ export default function Anime(props: AnimeProps) {
                         props.complete(ani);
                     }
 
-                    ani.animatables.map(a => completed.current.add(a.target));
+                    ani.animatables.map((a) => completed.current.add(a.target));
                 }
             };
             delete animeProps.children;
@@ -127,11 +128,11 @@ export default function Anime(props: AnimeProps) {
     );
 
     const refs = targetRefs.current;
-    if (!Array.isArray(props.children)) props.children = [ props.children ];
+    let children: ReactNodeArray = Array.isArray(props.children) ? props.children : [ props.children ];
+    children = flatten(children);
     return (
         <Fragment>
-            {// @ts-ignore
-            props.children.map((child: any, i: number) => {
+            {children.map((child: any, i: number) => {
                 refs.push(React.createRef());
                 // eslint-disable-next-line
                 const El = props.svg ? 'g' : 'div';
