@@ -27,8 +27,9 @@
       "src/react-anime.tsx"
     ],
     "testMatch": [
-      "/tests/**/*.[jt]s?(x)"
-    ]
+      "**/tests/**/*.[jt]s?(x)"
+    ],
+    "testPathIgnorePatterns": ["node_modules", "dist"] 
   },
   "repository": {
     "type": "git",
