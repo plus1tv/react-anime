@@ -12,9 +12,11 @@ export default function Anime(props: AnimeProps) {
 
     const createAnime = useCallback(
         () => {
+            /* istanbul ignore next */
             if (targets.current.length > 0 && anime !== undefined) animejs.remove(targets);
             targets.current = [];
             for (let ref of targetRefs.current) {
+                /* istanbul ignore next */
                 if (ref.current && !completed.current.has(ref.current)) targets.current.push(ref.current);
             }
 

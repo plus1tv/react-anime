@@ -4,7 +4,7 @@ import {render} from '@testing-library/react';
 import Anime from '../src/react-anime';
 
 //snapshot test
-it('2 children delayed fade in', () => {
+it('1 child delayed fade in', () => {
   const tree = render(
     <Anime
       easing="easeOutElastic"
@@ -13,7 +13,6 @@ it('2 children delayed fade in', () => {
       direction="alternate"
       delay={(_, index) => index * 240}>
       <p>1</p>
-      <p>2</p>
     </Anime>);
 
   expect(tree.asFragment()).toMatchSnapshot();
