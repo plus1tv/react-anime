@@ -16,28 +16,23 @@ export default function Anime(props: AnimeProps) {
   // Current anime instance
   const anime = useRef<AnimeInstance | null>(null);
   // Currently fed Anime targets
-  const targets = useRef<AnimeSet>(new Set<any>());
+  const targets = useRef<any[]>([]);
   //Current refs
   const targetRefs = useRef<any[]>([]);
   // Completed Anime targets
   const completed = useRef<AnimeSet>(new Set<any>());
 
-  const createAnime = useCallback(async () => {
-    // ⏰ Await currently running animations
-    if (anime.current && anime.current.finished) {
-      await anime.current.finished;
-    }
-
+  const cycleAnime = props => {
     // 🗾 Reset Anime.js
     /* istanbul ignore next */
-    if (targets.current.size > 0) animejs.remove(targets);
-    targets.current.clear();
+    if (targets.current.length > 0) animejs.remove(targets);
+    targets.current = [];
 
     // ➕ Add new target references that haven't completed
     for (let ref of targetRefs.current) {
       /* istanbul ignore next */
       if (ref.current && !completed.current.has(ref.current))
-        targets.current.add(ref.current);
+        targets.current.push(ref.current);
     }
 
     // 😮 Overload complete callback
@@ -54,6 +49,12 @@ export default function Anime(props: AnimeProps) {
     delete animeProps.children;
     delete animeProps.svg;
     anime.current = animejs(animeProps);
+  };
+
+  const createAnime = useCallback(() => {
+    // ⏰ TODO: Await currently running animations
+    // or leave current instance in memory
+    cycleAnime(props);
   }, [props]);
 
   useEffect(() => {
