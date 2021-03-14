@@ -1571,6 +1571,5 @@ class SvgPaths extends React.Component {
 //snapshot test
 it('svg paths', () => {
     const tree = render(<SvgPaths />);
-
     expect(tree.asFragment()).toMatchSnapshot();
 });

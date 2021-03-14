@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`custom components 1`] = `
+<DocumentFragment>
+  <div>
+    <div>
+      <p>
+        1
+      </p>
+    </div>
+    <p />
+    <p>
+      2
+    </p>
+    <p />
+    <div>
+      <p>
+        3
+      </p>
+    </div>
+    <div>
+      <p>
+        4
+      </p>
+    </div>
+    <div>
+      <p>
+        5
+      </p>
+    </div>
+    <div />
+  </div>
+</DocumentFragment>
+`;

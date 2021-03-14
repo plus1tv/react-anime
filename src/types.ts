@@ -44,7 +44,7 @@ export type AnimeValue =
     | ((el: Element, index?: number) => string | number);
 
 export type AnimeProps = {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     delay?: ((el: Element, index?: number, len?: number) => number) | number;
     duration?: ((el: Element, index?: number, len?: number) => number) | number;
     autoplay?: boolean;
@@ -53,7 +53,7 @@ export type AnimeProps = {
     easing?: Easing;
     elasticity?: number;
     round?: number | boolean;
-    component: React.ComponentType;
+    component?: React.ElementType;
     begin?: Function;
     update?: Function;
     complete?: Function;

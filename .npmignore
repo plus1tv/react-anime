@@ -13,6 +13,7 @@ webpack.*.js
 .vscode
 example
 license.md
-dist/flatten.d.ts
+dist/*.d.ts
 dist/*.map
 .nyc_output
+!dist/react-anime.d.ts
