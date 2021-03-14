@@ -12,7 +12,7 @@ it('custom components', () => {
             <Anime component={null}>
                 <p>1</p>
             </Anime>
-            <Anime component="p">
+            <Anime component="section">
                 <p>2</p>
             </Anime>
             <Anime component={MyComponent}>

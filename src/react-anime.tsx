@@ -19,7 +19,6 @@ export default function Anime(props: AnimeProps) {
                 /* istanbul ignore next */
                 if (ref.current && !completed.current.has(ref.current)) targets.current.push(ref.current);
             }
-
             /* istanbul ignore next */
             const complete = (ani: AnimeInstance) => {
                 if (props.complete) props.complete(ani);
@@ -45,13 +44,14 @@ export default function Anime(props: AnimeProps) {
     );
 
     const refs = targetRefs.current;
+    /* istanbul ignore next */
     let children: ReactNodeArray = Array.isArray(props.children) ? props.children : [ props.children ];
     children = flatten(children);
     return (
         <Fragment>
             {children.map((child: any, i: number) => {
                 refs.push(React.createRef());
-                // eslint-disable-next-line
+                /* istanbul ignore next */
                 const El = props.component ? props.component : 'div';
                 return (
                     <El ref={refs[refs.length - 1]} key={`${PREFIX}${i}`}>
