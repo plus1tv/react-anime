@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import React, { Fragment, useRef, useCallback, useEffect, ReactNodeArray } from 'react';
 import animejs, { AnimeInstance } from 'animejs';
-import {flatten} from './flatten';
+import { flatten } from './flatten';
 
 export type Easing =
     | 'easeInSine'
@@ -101,13 +101,15 @@ export default function Anime(props: AnimeProps) {
                 if (ref.current && !completed.current.has(ref.current)) targets.current.push(ref.current);
             }
 
+            /* istanbul ignore next */
+            const complete = (ani: AnimeInstance) => {
+                if (props.complete) props.complete(ani);
+                ani.animatables.map((a) => completed.current.add(a.target));
+            };
             const animeProps: any = {
                 ...props,
                 targets: targets.current,
-                complete: (ani) => {
-                    props?.complete(ani);
-                    ani.animatables.map((a) => completed.current.add(a.target));
-                }
+                complete
             };
             delete animeProps.children;
             delete animeProps.svg;
