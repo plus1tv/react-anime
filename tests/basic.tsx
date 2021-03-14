@@ -1,10 +1,11 @@
+import '@testing-library/jest-dom'
 import React from 'react';
-import renderer from 'react-test-renderer';
+import {render} from '@testing-library/react';
 import Anime from '../src/react-anime';
 
 //snapshot test
 it('2 children delayed fade in', () => {
-  const tree = renderer.create(
+  const tree = render(
     <Anime
       easing="easeOutElastic"
       loop={true}
@@ -13,11 +14,7 @@ it('2 children delayed fade in', () => {
       delay={(_, index) => index * 240}>
       <p>1</p>
       <p>2</p>
-    </Anime>,
-    {
-      createNodeMock: _ => ({ nodeType: false })
-    }
-  );
+    </Anime>);
 
-  expect(tree.toJSON()).toMatchSnapshot();
+  expect(tree.asFragment()).toMatchSnapshot();
 });

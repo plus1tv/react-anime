@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`2 children delayed fade in 1`] = `
-Array [
+<DocumentFragment>
   <div>
     <p>
       1
     </p>
-  </div>,
+  </div>
   <div>
     <p>
       2
     </p>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Anime from '../src/react-anime';
 
 const MyAnime = (props) => (
@@ -7,7 +7,7 @@ const MyAnime = (props) => (
         easing="easeOutQuad"
         duration={1500}
         loop={true}
-        svg
+        component="g"
         delay={(el, index) => index * 200}
         direction="alternate"
         strokeDashoffset={(el) => {
@@ -1570,9 +1570,7 @@ class SvgPaths extends React.Component {
 
 //snapshot test
 it('svg paths', () => {
-    const tree = renderer.create(<SvgPaths />, {
-        createNodeMock: (_) => ({ nodeType: false })
-    });
+    const tree = render(<SvgPaths />);
 
-    expect(tree.toJSON()).toMatchSnapshot();
+    expect(tree.asFragment()).toMatchSnapshot();
 });

@@ -1,3 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`dynamic list 1`] = `null`;
+exports[`dynamic list 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      style="text-align: center; display: block; cursor: pointer; user-select: none;"
+    >
+      Add Entry
+    </a>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
+      <h1>
+        Entries
+      </h1>
+    </div>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
+      <p>
+        <a
+          style="text-decoration: none;"
+        >
+          ❌
+        </a>
+         First Entry
+      </p>
+    </div>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
+      <p>
+        <a
+          style="text-decoration: none;"
+        >
+          ❌
+        </a>
+         New Entry 1
+      </p>
+    </div>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
+      <p>
+        <a
+          style="text-decoration: none;"
+        >
+          ❌
+        </a>
+         New Entry 2
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

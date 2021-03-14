@@ -15,3 +15,4 @@ example
 license.md
 dist/flatten.d.ts
 dist/*.map
+.nyc_output

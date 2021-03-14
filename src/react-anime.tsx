@@ -58,7 +58,7 @@ export type AnimeProps = {
     easing?: Easing;
     elasticity?: number;
     round?: number | boolean;
-    svg?: boolean;
+    component: JSX.Element;
     begin?: Function;
     update?: Function;
     complete?: Function;
@@ -96,7 +96,6 @@ export default function Anime(props: AnimeProps) {
     const createAnime = useCallback(
         () => {
             if (targets.current.length > 0 && anime !== undefined) animejs.remove(targets);
-
             targets.current = [];
             for (let ref of targetRefs.current) {
                 if (ref.current && !completed.current.has(ref.current)) targets.current.push(ref.current);
@@ -106,10 +105,7 @@ export default function Anime(props: AnimeProps) {
                 ...props,
                 targets: targets.current,
                 complete: (ani) => {
-                    if (props.complete) {
-                        props.complete(ani);
-                    }
-
+                    props?.complete(ani);
                     ani.animatables.map((a) => completed.current.add(a.target));
                 }
             };
@@ -135,7 +131,7 @@ export default function Anime(props: AnimeProps) {
             {children.map((child: any, i: number) => {
                 refs.push(React.createRef());
                 // eslint-disable-next-line
-                const El = props.svg ? 'g' : 'div';
+                const El = props.component ? props.component : 'div';
                 return (
                     <El ref={refs[refs.length - 1]} key={`${PREFIX}${i}`}>
                         {child}

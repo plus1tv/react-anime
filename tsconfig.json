@@ -9,6 +9,7 @@
       "es2017"
     ],
     "module": "ES6",
+    "moduleResolution": "Node",
     "declaration": true,
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
