@@ -58,7 +58,7 @@ export type AnimeProps = {
     easing?: Easing;
     elasticity?: number;
     round?: number | boolean;
-    component: JSX.Element;
+    component: React.ComponentType;
     begin?: Function;
     update?: Function;
     complete?: Function;
