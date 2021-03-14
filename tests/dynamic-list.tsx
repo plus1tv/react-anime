@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { render, fireEvent, waitFor } from '@testing-library/react';
 import Anime from '../src/react-anime';
 

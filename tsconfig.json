@@ -22,6 +22,10 @@
     "jsx": "react",
     "allowSyntheticDefaultImports": true
   },
+  "include": [
+    "src/**/*",
+    "tests/**/*"
+  ],
   "compileOnSave": false,
   "buildOnSave": false
 }
