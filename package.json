@@ -27,8 +27,7 @@
       "src/react-anime.tsx"
     ],
     "testMatch": [
-      "**/tests/**/*.[jt]s?(x)",
-      "**/?(*.)+(spec|test).[tj]s?(x)"
+      "/tests/**/*.[jt]s?(x)"
     ]
   },
   "repository": {
