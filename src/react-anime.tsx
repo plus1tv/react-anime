@@ -104,7 +104,7 @@ export default function Anime(props: AnimeProps) {
             /* istanbul ignore next */
             const complete = (ani: AnimeInstance) => {
                 if (props.complete) props.complete(ani);
-                ani.animatables.map((a) => completed.current.add(a.target));
+                ani.animatables.map((a: any) => completed.current.add(a.target));
             };
             const animeProps: any = {
                 ...props,
