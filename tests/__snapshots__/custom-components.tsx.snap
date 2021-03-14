@@ -8,11 +8,11 @@ exports[`custom components 1`] = `
         1
       </p>
     </div>
-    <p />
-    <p>
-      2
-    </p>
-    <p />
+    <section>
+      <p>
+        2
+      </p>
+    </section>
     <div>
       <p>
         3

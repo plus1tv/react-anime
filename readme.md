@@ -24,7 +24,7 @@ npm i react-anime -S
 
 ## Features
 
-- Animate nearly all CSS, SVG, & DOM attributes by adding a prop with their name (eg. `opacity`, `backgroundColor`, `translateX`).
+- Animate nearly all CSS, SVG, & DOM attributes by adding a prop with their name (eg. `opacity`, `backgroundColor`, `transform` inputs like `translateX`).
 
 - Nested animations are as easy as putting an `<Anime>` component inside another.
 

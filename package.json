@@ -16,6 +16,7 @@
     "tsc": "tsc",
     "lint": "eslint ./src/**/*.ts",
     "prettier": "prettier --config .prettierrc.js --write \"src/**/*.{ts,tsx,js,json}\"",
+    "coverage:local": "nyc npm test && nyc report",
     "coverage": "nyc npm test && nyc report --reporter=lcov && codecov",
     "build": "microbundle --jsx React.createElement --compress",
     "dev": "microbundle watch"
@@ -29,7 +30,10 @@
     "testMatch": [
       "**/tests/**/*.[jt]s?(x)"
     ],
-    "testPathIgnorePatterns": ["node_modules", "dist"] 
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "dist"
+    ]
   },
   "repository": {
     "type": "git",
@@ -76,11 +80,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.x",
     "@babel/preset-env": "^7.13.x",
     "@babel/preset-react": "^7.12.x",
     "@babel/preset-typescript": "^7.13.x",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
+    "@testing-library/jest-dom": "^5.11.x",
+    "@testing-library/react": "^11.2.x",
     "@types/animejs": "^3.1.x",
     "@types/jest": "^26.0.x",
     "@types/react": "^17.0.x",

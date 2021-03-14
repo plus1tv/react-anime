@@ -16,6 +16,15 @@
         }
       ],
       "@babel/preset-typescript"
-    ]
+    ],
+    "plugins": [ [
+      "@babel/plugin-transform-runtime",
+      {
+        "absoluteRuntime": false,
+        "corejs": false,
+        "helpers": false,
+        "regenerator": true
+      }
+    ]]
   }
   

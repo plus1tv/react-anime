@@ -1,6 +1,6 @@
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
 import React from 'react';
-import {render} from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Anime from '../src/react-anime';
 
 //snapshot test
@@ -13,7 +13,8 @@ it('1 child delayed fade in', () => {
       direction="alternate"
       delay={(_, index) => index * 240}>
       <p>1</p>
-    </Anime>);
+    </Anime>
+  );
 
   expect(tree.asFragment()).toMatchSnapshot();
 });
