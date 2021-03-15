@@ -14,7 +14,7 @@ type AnimeSet = Set<any>;
 
 export default function Anime(props: AnimeProps) {
   // Current anime instance
-  const anime = useRef<AnimeInstance | null>(null);
+  const animes = useRef<AnimeInstance[]>([]);
   // Currently fed Anime targets
   const targets = useRef<any[]>([]);
   //Current refs
@@ -24,6 +24,9 @@ export default function Anime(props: AnimeProps) {
 
   const cycleAnime = props => {
     // 🗾 Reset Anime.js
+    for (let ani of animes.current) {
+      if (ani.completed) animes.current = animes.current.filter(a => a != ani);
+    }
     /* istanbul ignore next */
     if (targets.current.length > 0) animejs.remove(targets);
     targets.current = [];
@@ -48,12 +51,10 @@ export default function Anime(props: AnimeProps) {
     };
     delete animeProps.children;
     delete animeProps.svg;
-    anime.current = animejs(animeProps);
+    animes.current.push(animejs(animeProps));
   };
 
   const createAnime = useCallback(() => {
-    // ⏰ TODO: Await currently running animations
-    // or leave current instance in memory
     cycleAnime(props);
   }, [props]);
 
