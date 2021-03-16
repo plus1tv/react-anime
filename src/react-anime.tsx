@@ -22,11 +22,17 @@ export default function Anime(props: AnimeProps) {
   // Completed Anime targets
   const completed = useRef<AnimeSet>(new Set<any>());
 
-  const cycleAnime = props => {
-    // 🗾 Reset Anime.js
+  /* istanbul ignore next */
+  const cleanupAnimeStack = () => {
     for (let ani of animes.current) {
       if (ani.completed) animes.current = animes.current.filter(a => a != ani);
     }
+    targets.current = targets.current.filter(t => t != undefined && t != null );
+    targetRefs.current = targetRefs.current.filter(t => t != undefined && t != null );
+  }
+
+  const cycleAnime = props => {
+    // 🗾 Reset Anime.js
     /* istanbul ignore next */
     if (targets.current.length > 0) animejs.remove(targets);
     targets.current = [];
@@ -43,6 +49,7 @@ export default function Anime(props: AnimeProps) {
     const complete = (ani: AnimeInstance) => {
       if (props.complete) props.complete(ani);
       ani.animatables.map((a: any) => completed.current.add(a.target));
+      cleanupAnimeStack();
     };
     const animeProps: any = {
       ...props,
