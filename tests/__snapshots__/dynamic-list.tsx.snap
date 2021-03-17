@@ -8,12 +8,16 @@ exports[`dynamic list 1`] = `
     >
       Add Entry
     </a>
-    <div>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
       <h1>
         Entries
       </h1>
     </div>
-    <div>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
       <p>
         <a
           style="text-decoration: none;"
@@ -23,7 +27,9 @@ exports[`dynamic list 1`] = `
          First Entry
       </p>
     </div>
-    <div>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
       <p>
         <a
           style="text-decoration: none;"
@@ -33,7 +39,9 @@ exports[`dynamic list 1`] = `
          New Entry 1
       </p>
     </div>
-    <div>
+    <div
+      style="opacity: 0; transform: translateY(0em) ;"
+    >
       <p>
         <a
           style="text-decoration: none;"

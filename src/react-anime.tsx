@@ -16,22 +16,25 @@ export default function Anime(props: AnimeProps) {
   // Current anime instance
   const animes = useRef<AnimeInstance[]>([]);
   // Currently fed Anime targets
-  const targets = useRef<any[]>([]);
+  const targets = useRef<Element[]>([]);
   //Current refs
-  const targetRefs = useRef<any[]>([]);
+  const targetRefs = useRef<{ current: Element }[]>([]);
   // Completed Anime targets
-  const completed = useRef<AnimeSet>(new Set<any>());
+  const completed = useRef<AnimeSet>(new Set<Element>());
 
   /* istanbul ignore next */
   const cleanupAnimeStack = () => {
     for (let ani of animes.current) {
       if (ani.completed) animes.current = animes.current.filter(a => a != ani);
     }
-    targets.current = targets.current.filter(t => t != undefined && t != null );
-    targetRefs.current = targetRefs.current.filter(t => t != undefined && t != null );
-  }
+    targets.current = targets.current.filter(t => t != undefined && t != null);
+    targetRefs.current = targetRefs.current.filter(t => t && t.current != null);
+  };
 
   const cycleAnime = props => {
+    // 🚽 Clean anime refs
+    cleanupAnimeStack();
+
     // 🗾 Reset Anime.js
     /* istanbul ignore next */
     if (targets.current.length > 0) animejs.remove(targets);
