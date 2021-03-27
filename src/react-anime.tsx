@@ -60,7 +60,6 @@ export default function Anime(props: AnimeProps) {
       complete
     };
     delete animeProps.children;
-    delete animeProps.svg;
     animes.current.push(animejs(animeProps));
   };
 

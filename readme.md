@@ -47,7 +47,6 @@ const MyAnime = (props) => (
         {colors.map((color, i) => <div key={i} className={color} />)}
     </Anime>
 );
-
 ```
 
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
