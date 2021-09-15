@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import { render } from '@testing-library/react';
 import Anime from '../src/react-anime';
 
