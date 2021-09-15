@@ -1,9 +1,10 @@
-import React, {
+import {
   Fragment,
   useRef,
   useCallback,
   useEffect,
-  ReactNodeArray
+  ReactNodeArray,
+  createRef
 } from 'react';
 import animejs, { AnimeInstance } from 'animejs';
 
@@ -80,7 +81,7 @@ export default function Anime(props: AnimeProps) {
   return (
     <Fragment>
       {children.map((child: any, i: number) => {
-        refs.push(React.createRef());
+        refs.push(createRef());
         /* istanbul ignore next */
         const El = props.component ? props.component : 'div';
         return (
@@ -92,5 +93,5 @@ export default function Anime(props: AnimeProps) {
     </Fragment>
   );
 }
-
-export { AnimeProps, AnimeValue, AnimeInstance, Easing, animejs as anime };
+export type { AnimeProps, AnimeValue, AnimeInstance, Easing };
+export { animejs as anime };

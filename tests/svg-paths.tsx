@@ -40,7 +40,7 @@ class SvgPaths extends React.Component {
           clipRule: 'evenodd',
           strokeLinecap: 'round',
           strokeLinejoin: 'round',
-          strokeMiterlimit: '1.5'
+          strokeMiterlimit: 1.5
         }}>
         <g id="Layer1" transform="matrix(1,0,0,1,0,-180)">
           <g transform="matrix(1,0,0,1,0,78.3333)">

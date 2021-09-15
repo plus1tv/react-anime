@@ -37,7 +37,6 @@ npm i react-anime -S
 ## Usage
 
 ```js
-import React from 'react';
 import Anime, { anime } from 'react-anime';
 
 let colors = [ 'blue', 'green', 'red' ];
