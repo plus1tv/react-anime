@@ -6,6 +6,7 @@
 [![License][license-img]][license-url]
 [![Unit Tests][travis-img]][travis-url]
 [![Coverage Tests][codecov-img]][codecov-url]
+[![Vulnerabilities][snyk-img]][snyk-url]
 
 > (ﾉ´ヮ´)ﾉ*:･ﾟ✧  A super easy animation library for React built on top of Julian Garnier's [anime.js](https://github.com/juliangarnier/anime). <br>
 > Just place an `<Anime>` component and what you want animated inside.
@@ -54,3 +55,5 @@ const MyAnime = (props) => (
 [codecov-url]: https://codecov.io/gh/plus1tv/react-anime
 [npm-img]: https://img.shields.io/npm/v/react-anime.svg?style=flat-square
 [npm-url]: http://npm.im/react-anime
+[snyk-img]:https://snyk.io/test/npm/react-anime/badge.svg?style=flat-square
+[snyk-url]:https://snyk.io/test/npm/react-anime
