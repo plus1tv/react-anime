@@ -6,8 +6,6 @@
 [![License][license-img]][license-url]
 [![Unit Tests][travis-img]][travis-url]
 [![Coverage Tests][codecov-img]][codecov-url]
-[![Dependency Status][david-img]][david-url]
-[![devDependency Status][david-dev-img]][david-dev-url]
 
 > (ﾉ´ヮ´)ﾉ*:･ﾟ✧  A super easy animation library for React built on top of Julian Garnier's [anime.js](https://github.com/juliangarnier/anime). <br>
 > Just place an `<Anime>` component and what you want animated inside.
@@ -50,10 +48,6 @@ const MyAnime = (props) => (
 
 [license-img]: http://img.shields.io/:license-mit-blue.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
-[david-url]: https://david-dm.org/plus1tv/react-anime
-[david-img]: https://david-dm.org/plus1tv/react-anime.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/plus1tv/react-anime#info=devDependencies
-[david-dev-img]: https://david-dm.org/plus1tv/react-anime/dev-status.svg?style=flat-square
 [travis-img]: https://img.shields.io/travis/com/plus1tv/react-anime?style=flat-square
 [travis-url]: https://www.travis-ci.com/github/plus1tv/react-anime
 [codecov-img]: https://img.shields.io/codecov/c/github/plus1tv/react-anime.svg?style=flat-square
